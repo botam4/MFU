@@ -1,0 +1,109 @@
+G1 E-5
+M201 X5000 Y5000
+G1 X256 Y50 F10000
+G1 Y20 F10000
+G1 Y4 F500
+G4 P300
+G1 Y20 Z{layer_z+20} F10000
+G1 X202 Y240 
+G1 X202 Y264
+;G1 E-40 F2000
+G1 X151
+
+G4 P200
+G1 X163
+G1 X151
+G4 P{200+next_extruder*200}
+
+
+
+G1 X163 F10000
+G1 E-80 F3000
+G1 X202 Y240 F2000
+G1 X202 Y264
+M104 S{first_layer_temperature[next_extruder]+20}
+G4 P40000
+;G4 P1000
+
+;G1 Z{layer_z}
+;G4 Z{layer_num}
+;G4 Z{next_extruder}
+;G1 E-40 F1000
+;G1 E80 F400
+
+
+
+
+{if (first_flush_volume + second_flush_volume + flush_length_1 + flush_length_2 + flush_length_3 + flush_length_4) <= 100}
+G1 E200 F600
+M106 S255
+G4 P2000
+G1 F18000
+M729
+M106 S0
+
+
+
+{else}
+G1 E{min(180, first_flush_volume + second_flush_volume + flush_length_1 + flush_length_2 + flush_length_3 + flush_length_4)} F600
+M106 S255
+G4 P2000
+G1 F18000
+M729
+M106 S0
+
+{if (first_flush_volume + second_flush_volume + flush_length_1 + flush_length_2 + flush_length_3 + flush_length_4) > 180}
+  G1 E{max(50, min(180,(first_flush_volume + second_flush_volume + flush_length_1 + flush_length_2 + flush_length_3 + flush_length_4) - 180))} F600
+  M106 S255
+  G4 P2000
+  G1 F18000
+  M729
+  M106 S0
+{endif}
+
+{if (first_flush_volume + second_flush_volume + flush_length_1 + flush_length_2 + flush_length_3 + flush_length_4) > 360}
+  G1 E{max(50, min(180,(first_flush_volume + second_flush_volume + flush_length_1 + flush_length_2 + flush_length_3 + flush_length_4) - 360))} F600
+  M106 S255
+  G4 P2000
+  G1 F18000
+  M729
+  M106 S0
+{endif}
+
+{if (first_flush_volume + second_flush_volume + flush_length_1 + flush_length_2 + flush_length_3 + flush_length_4) > 540}
+  G1 E{max(50,(first_flush_volume + second_flush_volume + flush_length_1 + flush_length_2 + flush_length_3 + flush_length_4) - 540)} F600
+  M106 S255
+  G4 P2000
+  G1 F18000
+  M729
+  M106 S0
+{endif}
+{endif}
+
+
+
+
+
+
+
+;M106 S255
+M104 S{first_layer_temperature[next_extruder]}
+;G1 Z{layer_z} F10000
+;G4 P3000
+;M729
+;M106 S0
+
+
+
+;CHANGE FILAMENT HERE
+;G1 X172 F20000
+;G1 X192 
+;G1 X172
+;G1 X192
+;G1 X172 
+;G1 X192
+;G1 X172
+;G1 X192
+;G1 X172
+;G1 X192
+;G1 X172
