@@ -6,7 +6,7 @@
 
 ## English
 
-This is a DIY project to develop the MFU filament management unit that helps upgrade 3D printers to multi-color printing.
+This is a DIY project to develop the MFU filament management unit that helps upgrade 3D printers to multi-color printing. The first version supports 4 colors, with future updates expanding up to 24 colors.
 
 ### Getting Started
 
@@ -15,8 +15,8 @@ This is a DIY project to develop the MFU filament management unit that helps upg
 
 ### Video Guides
 
-- Assembly video: 
-- Orca Slicer configuration video: 
+- Assembly video: https://youtu.be/4nuLiIfUS9k?si=D33QVgEpBlRm-J32
+- Orca Slicer configuration video: https://youtu.be/mMb1uVVZ5uk?si=lUsIQIRI1cwY8P57
 
 ### Support
 
@@ -26,7 +26,7 @@ This is a DIY project to develop the MFU filament management unit that helps upg
 
 ## Tiếng Việt
 
-Đây là dự án DIY phát triển bộ quản lý nhựa MFU giúp máy in có thể nâng cấp lên in nhiều màu.
+Đây là dự án DIY phát triển bộ quản lý nhựa MFU giúp máy in có thể nâng cấp lên in nhiều màu. Ở phiên bản đầu tiên sử dụng được 4 màu, các bản cập nhật tiếp theo sẽ mở rộng lên đến 24 màu.
 
 ### Bắt Đầu
 
@@ -35,8 +35,8 @@ This is a DIY project to develop the MFU filament management unit that helps upg
 
 ### Video Hướng Dẫn
 
-- Video lắp ráp: 
-- Video cấu hình Orca Slicer:
+- Video lắp ráp: https://youtu.be/4nuLiIfUS9k?si=D33QVgEpBlRm-J32
+- Video cấu hình Orca Slicer: https://youtu.be/mMb1uVVZ5uk?si=lUsIQIRI1cwY8P57
 
 ### Hỗ Trợ
 
