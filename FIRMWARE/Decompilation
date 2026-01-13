@@ -1,0 +1,2325 @@
+Possible file format: ELF for ARM (Executable) (C:\Program Files\IDA Professional 9.1\loaders\elf.dll)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   368640    45 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  1155072            total memory allocated
+
+Loading processor module C:\Program Files\IDA Professional 9.1\procs\arm.dll for ARM...Initializing processor module ARM...OK
+Autoanalysis subsystem has been initialized.
+Loading file 'C:\Users\ionco\Downloads\firmware_ams.elf' into database...
+Detected file format: ELF for ARM (Executable)
+Assuming __fastcall calling convention by default
+  0. Creating a new segment  (08000000-0800B7A8) ... ... OK
+  1. Creating a new segment  (20000000-200000AC) ... ... OK
+  2. Creating a new segment  (200000B0-20000B20) ... ... OK
+  3. Creating a new segment  (20000B20-20001120) ... ... OK
+  4. Creating a new segment  (08000000-0800010C) ... ... OK
+     Deleting segment        (0800010C-0800B7A8) ...
+  4. Creating a new segment  (0800010C-0800B7A8) ... ... OK
+  5. Creating a new segment  (0800010C-0800A13C) ... ... OK
+     Deleting segment        (0800A13C-0800B7A8) ...
+  5. Creating a new segment  (0800A13C-0800B7A8) ... ... OK
+  6. Creating a new segment  (0800A13C-0800B76C) ... ... OK
+     Deleting segment        (0800B76C-0800B7A8) ...
+  6. Creating a new segment  (0800B76C-0800B7A8) ... ... OK
+  7. Creating a new segment  (0800B76C-0800B774) ... ... OK
+     Deleting segment        (0800B774-0800B7A8) ...
+  7. Creating a new segment  (0800B774-0800B7A8) ... ... OK
+  8. Creating a new segment  (0800B774-0800B794) ... ... OK
+     Deleting segment        (0800B794-0800B7A8) ...
+  8. Creating a new segment  (0800B794-0800B7A8) ... ... OK
+     Deleting segment        (0800B794-0800B7A8) ...
+  8. Creating a new segment  (0800B794-0800B7A8) ... ... OK
+     Deleting segment        (20000000-200000AC) ...
+  8. Creating a new segment  (20000000-200000AC) ... ... OK
+     Deleting segment        (200000B0-20000B20) ...
+  8. Creating a new segment  (200000B0-20000B20) ... ... OK
+     Deleting segment        (20000B20-20001120) ...
+  8. Creating a new segment  (20000B20-20001120) ... ... OK
+Assuming __fastcall calling convention by default
+Type library 'gnulnx_arm' loaded. Applying types...
+Types applied to 0 names.
+  9. Creating a new segment  (20001120-20001290) ... ... OK
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File 'C:\Users\ionco\Downloads\firmware_ams.elf' has been successfully loaded into the database.
+Flushing buffers, please wait...ok
+Hex-Rays Decompiler plugin has been loaded (v9.1.0.250226)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+Hex-rays version 9.1.0.250226 has been detected, gooMBA plugin ready to use
+IDA is analysing the input file...
+You may start to explore the input file right now.
+---------------------------------------------------------------------------------------
+Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)] 
+IDAPython 64-bit v9.1.0 (c) The IDAPython Team <idapython@googlegroups.com>
+---------------------------------------------------------------------------------------
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+String "0x4001" not found
+String "0x4001" not found
+String "0x4001" not found
+Pattern not found
+Command "AskNextText" failed
+Command "AskNextText" failed
+Pattern not found
+Command "AskNextText" failed
+Pattern not found
+Command "AskNextText" failed
+Command "AskNextText" failed
+String "MX_GPIO_Init" not found
+Command "JumpEnter" failed
+Command "JumpEnter" failed
+Command "JumpEnter" failed
+Command "JumpEnter" failed
+Command "JumpEnter" failed
+Search completed. Found at 00000000080039DE.
+Search completed. Found at 00000000080039DA.
+Search completed
+String "gpioa" not found
+String "gpioa" not found
+WindowStateChange IDA View-A
+WindowStateChange IDA View-A
+
+Detected GPIO usage via HAL_GPIO_Init:
+
+Port     Pin   Dir      CallAddr    
+----------------------------------------
+
+GPIO usage saved to gpio_usage.txt
+C:\Users\ionco\Downloads
+2026-01-13 18:17:42 decompiling 8000658 size=0000000000000192 times=0...
+     Address          Size          Time
+---------------- ---------------- --------
+0000000008000658 0000000000000192 00:00:06
+000001F6431C5F50 0000000000000002 00:35:57
+0000000000000001 000001F6431C6000 00:00:00
+0000000000000002 0000000000000002 00:00:00
+000001F6431C6160 0000000000000001 00:35:57
+80001000C7A21F2A 000001F642E1A100 00:00:00
+0000000000000000 80001100C7AA1F32 00:00:00
+0000000000000000 0000000000000000 00:35:57
+0000000000000000 0000000000000000 00:00:00
+0000000000000000 0000000000000000 00:00:00
+0000000000000000 0000000000000000 00:35:57
+000001F638489400 0000000000000001 00:00:00
+0000000000000001 000001F6384891B0 00:00:00
+0000000000000000 0000000000000000 00:35:57
+000001F638489FB0 0000000000000001 336090:28:08
+0000000000000001 000001F638489910 00:00:00
+0000000000000001 0000000000000001 00:00:00
+000001F6431C6050 0000000000000002 00:35:57
+0000000000000000 0000000000000000 00:00:00
+206C6C6163747361 4F4950475F4C4148 00:00:-1014844791
+0000000000000000 0000000000000000 00:35:57
+00007FFFB02A3C50 00007FF8587F6440 00:35:57
+00007FFFB0288A80 00007FFFB02A3C50 00:00:00
+0000000000000000 0000000000000000 39:05:04
+00007FF8587F6440 000001F642F314F0 00:35:57
+00007FFFB02A3C50 00007FFFB0288AB0 00:35:57
+00007FF8765AD518 00007FF8765AD348 00:00:00
+0000000000000000 0000000000000001 00:00:00
+0000000000000054 000001F642E1ABD0 39:05:03
+0000000000000000 0000000000000000 00:00:00
+00007FF86841C880 00007FF86841C678 00:00:00
+0000000000000000 0000000000000000 39:05:04
+2026-01-13 18:17:49 The application has been completely decompiled.
+test
+test
+test
+test
+test
+test
+test
+test
+Tracing calls to HAL_GPIO_Init at 0x8000658
+Potential indirect call at 0x80003DC (target may be in a register)
+Potential indirect call at 0x8000F98 (target may be in a register)
+Potential indirect call at 0x800174A (target may be in a register)
+Potential indirect call at 0x80017C6 (target may be in a register)
+Potential indirect call at 0x8002F28 (target may be in a register)
+Potential indirect call at 0x8002F3E (target may be in a register)
+Potential indirect call at 0x8003678 (target may be in a register)
+Direct call found at 0x8003AB2
+Potential indirect call at 0x8006C3A (target may be in a register)
+Potential indirect call at 0x8006E7E (target may be in a register)
+Potential indirect call at 0x80072A8 (target may be in a register)
+Potential indirect call at 0x80072C4 (target may be in a register)
+Potential indirect call at 0x800730A (target may be in a register)
+Potential indirect call at 0x8007426 (target may be in a register)
+Potential indirect call at 0x80074A8 (target may be in a register)
+Potential indirect call at 0x80074BE (target may be in a register)
+Potential indirect call at 0x80074E2 (target may be in a register)
+Potential indirect call at 0x80074F8 (target may be in a register)
+Potential indirect call at 0x8007520 (target may be in a register)
+Potential indirect call at 0x8007548 (target may be in a register)
+Potential indirect call at 0x8007564 (target may be in a register)
+Potential indirect call at 0x8007582 (target may be in a register)
+Potential indirect call at 0x8007596 (target may be in a register)
+Potential indirect call at 0x80075B0 (target may be in a register)
+Potential indirect call at 0x80075C4 (target may be in a register)
+Potential indirect call at 0x80075DA (target may be in a register)
+Potential indirect call at 0x8007648 (target may be in a register)
+Potential indirect call at 0x800765C (target may be in a register)
+Potential indirect call at 0x800770E (target may be in a register)
+Potential indirect call at 0x8007748 (target may be in a register)
+Potential indirect call at 0x8007820 (target may be in a register)
+Potential indirect call at 0x8007864 (target may be in a register)
+Potential indirect call at 0x800789E (target may be in a register)
+Potential indirect call at 0x80078EC (target may be in a register)
+Potential indirect call at 0x800797A (target may be in a register)
+Potential indirect call at 0x80079E8 (target may be in a register)
+Potential indirect call at 0x8007A38 (target may be in a register)
+Potential indirect call at 0x8007A62 (target may be in a register)
+Potential indirect call at 0x8007AA6 (target may be in a register)
+Potential indirect call at 0x8007AF4 (target may be in a register)
+Potential indirect call at 0x8007B6C (target may be in a register)
+Potential indirect call at 0x8007BAE (target may be in a register)
+Potential indirect call at 0x8007E20 (target may be in a register)
+Potential indirect call at 0x8007E2A (target may be in a register)
+Potential indirect call at 0x8007EFC (target may be in a register)
+Potential indirect call at 0x8007F28 (target may be in a register)
+Potential indirect call at 0x8007F36 (target may be in a register)
+Potential indirect call at 0x80086AA (target may be in a register)
+Potential indirect call at 0x800870A (target may be in a register)
+Potential indirect call at 0x8008718 (target may be in a register)
+Potential indirect call at 0x800888E (target may be in a register)
+Potential indirect call at 0x800893A (target may be in a register)
+Potential indirect call at 0x800896E (target may be in a register)
+Potential indirect call at 0x80089D2 (target may be in a register)
+Potential indirect call at 0x80089DA (target may be in a register)
+Potential indirect call at 0x8008BBC (target may be in a register)
+Potential indirect call at 0x8008CDA (target may be in a register)
+Potential indirect call at 0x8008DFE (target may be in a register)
+Potential indirect call at 0x8009FA2 (target may be in a register)
+Potential indirect call at 0x800A034 (target may be in a register)
+Potential indirect call at 0x800A03E (target may be in a register)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+HAL_GPIO_Init at 0x8000658
+Indirect call at 0x800018C (target may be in a register)
+Indirect call at 0x80001A0 (target may be in a register)
+Indirect call at 0x80001CA (target may be in a register)
+Indirect call at 0x80001D0 (target may be in a register)
+Indirect call at 0x80001D4 (target may be in a register)
+Indirect call at 0x8000310 (target may be in a register)
+Indirect call at 0x8000328 (target may be in a register)
+Indirect call at 0x80003DC (target may be in a register)
+Indirect call at 0x8000498 (target may be in a register)
+Indirect call at 0x80004C4 (target may be in a register)
+Indirect call at 0x80004D6 (target may be in a register)
+Indirect call at 0x800050A (target may be in a register)
+Indirect call at 0x8000558 (target may be in a register)
+Indirect call at 0x80005CE (target may be in a register)
+Indirect call at 0x80005F6 (target may be in a register)
+Indirect call at 0x8000604 (target may be in a register)
+Indirect call at 0x8000628 (target may be in a register)
+Indirect call at 0x8000630 (target may be in a register)
+Indirect call at 0x8000814 (target may be in a register)
+Indirect call at 0x8000854 (target may be in a register)
+Indirect call at 0x80008BC (target may be in a register)
+Indirect call at 0x80008E0 (target may be in a register)
+Indirect call at 0x8000A08 (target may be in a register)
+Indirect call at 0x8000A32 (target may be in a register)
+Indirect call at 0x8000A52 (target may be in a register)
+Indirect call at 0x8000AAE (target may be in a register)
+Indirect call at 0x8000ACA (target may be in a register)
+Indirect call at 0x8000B20 (target may be in a register)
+Indirect call at 0x8000B2A (target may be in a register)
+Indirect call at 0x8000B64 (target may be in a register)
+Indirect call at 0x8000E1E (target may be in a register)
+Indirect call at 0x8000E98 (target may be in a register)
+Indirect call at 0x8000F04 (target may be in a register)
+Indirect call at 0x8000F7E (target may be in a register)
+Indirect call at 0x8000F98 (target may be in a register)
+Indirect call at 0x8000FCE (target may be in a register)
+Indirect call at 0x8000FF0 (target may be in a register)
+Indirect call at 0x800104E (target may be in a register)
+Indirect call at 0x8001068 (target may be in a register)
+Indirect call at 0x80013A6 (target may be in a register)
+Indirect call at 0x800145C (target may be in a register)
+Indirect call at 0x8001530 (target may be in a register)
+Indirect call at 0x8001578 (target may be in a register)
+Indirect call at 0x8001590 (target may be in a register)
+Indirect call at 0x80016AC (target may be in a register)
+Indirect call at 0x8001732 (target may be in a register)
+Indirect call at 0x8001740 (target may be in a register)
+Indirect call at 0x800174A (target may be in a register)
+Indirect call at 0x8001768 (target may be in a register)
+Indirect call at 0x8001788 (target may be in a register)
+Indirect call at 0x80017AE (target may be in a register)
+Indirect call at 0x80017BC (target may be in a register)
+Indirect call at 0x80017C6 (target may be in a register)
+Indirect call at 0x8001842 (target may be in a register)
+Indirect call at 0x80018B4 (target may be in a register)
+Indirect call at 0x8001A3E (target may be in a register)
+Indirect call at 0x8001A84 (target may be in a register)
+Indirect call at 0x8001B28 (target may be in a register)
+Indirect call at 0x8001B34 (target may be in a register)
+Indirect call at 0x8001B58 (target may be in a register)
+Indirect call at 0x8001B64 (target may be in a register)
+Indirect call at 0x8001BCE (target may be in a register)
+Indirect call at 0x8001BDA (target may be in a register)
+Indirect call at 0x8001BE8 (target may be in a register)
+Indirect call at 0x8001BF6 (target may be in a register)
+Indirect call at 0x8001C10 (target may be in a register)
+Indirect call at 0x8001C38 (target may be in a register)
+Indirect call at 0x8001C48 (target may be in a register)
+Indirect call at 0x8001C56 (target may be in a register)
+Indirect call at 0x8001C94 (target may be in a register)
+Indirect call at 0x8001CC0 (target may be in a register)
+Indirect call at 0x8001CCC (target may be in a register)
+Indirect call at 0x8001CF0 (target may be in a register)
+Indirect call at 0x8001CFC (target may be in a register)
+Indirect call at 0x8001D24 (target may be in a register)
+Indirect call at 0x8001D56 (target may be in a register)
+Indirect call at 0x8001D8A (target may be in a register)
+Indirect call at 0x8001D98 (target may be in a register)
+Indirect call at 0x8001DA4 (target may be in a register)
+Indirect call at 0x8001DB0 (target may be in a register)
+Indirect call at 0x8001DBE (target may be in a register)
+Indirect call at 0x8001E8E (target may be in a register)
+Indirect call at 0x8001EA6 (target may be in a register)
+Indirect call at 0x8001F0C (target may be in a register)
+Indirect call at 0x8001F20 (target may be in a register)
+Indirect call at 0x8002022 (target may be in a register)
+Indirect call at 0x8002226 (target may be in a register)
+Indirect call at 0x800224C (target may be in a register)
+Indirect call at 0x8002270 (target may be in a register)
+Indirect call at 0x8002296 (target may be in a register)
+Indirect call at 0x80022B0 (target may be in a register)
+Indirect call at 0x80022C6 (target may be in a register)
+Indirect call at 0x80022DC (target may be in a register)
+Indirect call at 0x80022FA (target may be in a register)
+Indirect call at 0x8002300 (target may be in a register)
+Indirect call at 0x8002306 (target may be in a register)
+Indirect call at 0x800230C (target may be in a register)
+Indirect call at 0x8002312 (target may be in a register)
+Indirect call at 0x8002318 (target may be in a register)
+Indirect call at 0x800231E (target may be in a register)
+Indirect call at 0x8002324 (target may be in a register)
+Indirect call at 0x80023A4 (target may be in a register)
+Indirect call at 0x80023B2 (target may be in a register)
+Indirect call at 0x8002468 (target may be in a register)
+Indirect call at 0x8002470 (target may be in a register)
+Indirect call at 0x800247A (target may be in a register)
+Indirect call at 0x8002482 (target may be in a register)
+Indirect call at 0x80024B8 (target may be in a register)
+Indirect call at 0x80024D8 (target may be in a register)
+Indirect call at 0x80024FA (target may be in a register)
+Indirect call at 0x800251A (target may be in a register)
+Indirect call at 0x80025AE (target may be in a register)
+Indirect call at 0x8002722 (target may be in a register)
+Indirect call at 0x8002794 (target may be in a register)
+Indirect call at 0x80028AA (target may be in a register)
+Indirect call at 0x800298C (target may be in a register)
+Indirect call at 0x80029B8 (target may be in a register)
+Indirect call at 0x80029DA (target may be in a register)
+Indirect call at 0x80029F0 (target may be in a register)
+Indirect call at 0x8002A38 (target may be in a register)
+Indirect call at 0x8002A4E (target may be in a register)
+Indirect call at 0x8002AC6 (target may be in a register)
+Indirect call at 0x8002B5A (target may be in a register)
+Indirect call at 0x8002B7E (target may be in a register)
+Indirect call at 0x8002BEE (target may be in a register)
+Indirect call at 0x8002C08 (target may be in a register)
+Indirect call at 0x8002C34 (target may be in a register)
+Indirect call at 0x8002CA0 (target may be in a register)
+Indirect call at 0x8002CA8 (target may be in a register)
+Indirect call at 0x8002D5C (target may be in a register)
+Indirect call at 0x8002D6E (target may be in a register)
+Indirect call at 0x8002E52 (target may be in a register)
+Indirect call at 0x8002F28 (target may be in a register)
+Indirect call at 0x8002F3E (target may be in a register)
+Indirect call at 0x8002FC8 (target may be in a register)
+Indirect call at 0x8002FDA (target may be in a register)
+Indirect call at 0x8003018 (target may be in a register)
+Indirect call at 0x800303C (target may be in a register)
+Indirect call at 0x800305A (target may be in a register)
+Indirect call at 0x8003062 (target may be in a register)
+Indirect call at 0x800306C (target may be in a register)
+Indirect call at 0x8003082 (target may be in a register)
+Indirect call at 0x80030CA (target may be in a register)
+Indirect call at 0x8003110 (target may be in a register)
+Indirect call at 0x800317A (target may be in a register)
+Indirect call at 0x800318C (target may be in a register)
+Indirect call at 0x8003198 (target may be in a register)
+Indirect call at 0x800319E (target may be in a register)
+Indirect call at 0x80031A6 (target may be in a register)
+Indirect call at 0x80031CC (target may be in a register)
+Indirect call at 0x80031E2 (target may be in a register)
+Indirect call at 0x8003200 (target may be in a register)
+Indirect call at 0x800321A (target may be in a register)
+Indirect call at 0x8003234 (target may be in a register)
+Indirect call at 0x800324E (target may be in a register)
+Indirect call at 0x8003268 (target may be in a register)
+Indirect call at 0x8003282 (target may be in a register)
+Indirect call at 0x8003298 (target may be in a register)
+Indirect call at 0x80032B2 (target may be in a register)
+Indirect call at 0x80032CC (target may be in a register)
+Indirect call at 0x80032DC (target may be in a register)
+Indirect call at 0x80032F8 (target may be in a register)
+Indirect call at 0x8003300 (target may be in a register)
+Indirect call at 0x8003324 (target may be in a register)
+Indirect call at 0x8003330 (target may be in a register)
+Indirect call at 0x800336C (target may be in a register)
+Indirect call at 0x8003382 (target may be in a register)
+Indirect call at 0x80033DE (target may be in a register)
+Indirect call at 0x80033E6 (target may be in a register)
+Indirect call at 0x8003404 (target may be in a register)
+Indirect call at 0x800341A (target may be in a register)
+Indirect call at 0x8003458 (target may be in a register)
+Indirect call at 0x8003468 (target may be in a register)
+Indirect call at 0x80034A4 (target may be in a register)
+Indirect call at 0x80034B0 (target may be in a register)
+Indirect call at 0x80034B6 (target may be in a register)
+Indirect call at 0x80034C6 (target may be in a register)
+Indirect call at 0x80034E4 (target may be in a register)
+Indirect call at 0x8003512 (target may be in a register)
+Indirect call at 0x800352C (target may be in a register)
+Indirect call at 0x8003544 (target may be in a register)
+Indirect call at 0x80035A6 (target may be in a register)
+Indirect call at 0x80035BA (target may be in a register)
+Indirect call at 0x800364A (target may be in a register)
+Indirect call at 0x800365A (target may be in a register)
+Indirect call at 0x8003678 (target may be in a register)
+Indirect call at 0x800368C (target may be in a register)
+Indirect call at 0x800369E (target may be in a register)
+Indirect call at 0x80036AA (target may be in a register)
+Indirect call at 0x80036D0 (target may be in a register)
+Indirect call at 0x80036E0 (target may be in a register)
+Indirect call at 0x80037BA (target may be in a register)
+Indirect call at 0x80037BE (target may be in a register)
+Indirect call at 0x80037CE (target may be in a register)
+Indirect call at 0x80037D8 (target may be in a register)
+Indirect call at 0x80037E0 (target may be in a register)
+Indirect call at 0x80037F4 (target may be in a register)
+Indirect call at 0x8003800 (target may be in a register)
+Indirect call at 0x8003816 (target may be in a register)
+Indirect call at 0x8003820 (target may be in a register)
+Indirect call at 0x800382C (target may be in a register)
+Indirect call at 0x8003856 (target may be in a register)
+Indirect call at 0x800385A (target may be in a register)
+Indirect call at 0x800386A (target may be in a register)
+Indirect call at 0x8003874 (target may be in a register)
+Indirect call at 0x800387C (target may be in a register)
+Indirect call at 0x8003890 (target may be in a register)
+Indirect call at 0x80038B2 (target may be in a register)
+Indirect call at 0x80038BC (target may be in a register)
+Indirect call at 0x80038FC (target may be in a register)
+Indirect call at 0x8003900 (target may be in a register)
+Indirect call at 0x8003904 (target may be in a register)
+Indirect call at 0x800398E (target may be in a register)
+Indirect call at 0x8003992 (target may be in a register)
+Indirect call at 0x8003996 (target may be in a register)
+Indirect call at 0x800399A (target may be in a register)
+Indirect call at 0x800399E (target may be in a register)
+Indirect call at 0x8003A32 (target may be in a register)
+Indirect call at 0x8003A4A (target may be in a register)
+Indirect call at 0x8003A7C (target may be in a register)
+Direct call at 0x8003AB2
+Indirect call at 0x8003AC2 (target may be in a register)
+Indirect call at 0x8003B00 (target may be in a register)
+Indirect call at 0x8003B0E (target may be in a register)
+Indirect call at 0x8003B14 (target may be in a register)
+Indirect call at 0x8003B38 (target may be in a register)
+Indirect call at 0x8003B44 (target may be in a register)
+Indirect call at 0x8003B52 (target may be in a register)
+Indirect call at 0x8003B60 (target may be in a register)
+Indirect call at 0x8003B70 (target may be in a register)
+Indirect call at 0x8003B7C (target may be in a register)
+Indirect call at 0x8003B88 (target may be in a register)
+Indirect call at 0x8003B94 (target may be in a register)
+Indirect call at 0x8003BA0 (target may be in a register)
+Indirect call at 0x8003BAE (target may be in a register)
+Indirect call at 0x8003BBA (target may be in a register)
+Indirect call at 0x8003BC6 (target may be in a register)
+Indirect call at 0x8003BD2 (target may be in a register)
+Indirect call at 0x8003BDE (target may be in a register)
+Indirect call at 0x8003BEA (target may be in a register)
+Indirect call at 0x8003C10 (target may be in a register)
+Indirect call at 0x8003EB0 (target may be in a register)
+Indirect call at 0x8003F0A (target may be in a register)
+Indirect call at 0x8003F14 (target may be in a register)
+Indirect call at 0x8003F72 (target may be in a register)
+Indirect call at 0x8003F7C (target may be in a register)
+Indirect call at 0x8003F8A (target may be in a register)
+Indirect call at 0x8003FB2 (target may be in a register)
+Indirect call at 0x8003FC2 (target may be in a register)
+Indirect call at 0x8003FEA (target may be in a register)
+Indirect call at 0x8004268 (target may be in a register)
+Indirect call at 0x800426E (target may be in a register)
+Indirect call at 0x8004276 (target may be in a register)
+Indirect call at 0x800427C (target may be in a register)
+Indirect call at 0x8004280 (target may be in a register)
+Indirect call at 0x8004288 (target may be in a register)
+Indirect call at 0x8004290 (target may be in a register)
+Indirect call at 0x800429E (target may be in a register)
+Indirect call at 0x80042A4 (target may be in a register)
+Indirect call at 0x80042EC (target may be in a register)
+Indirect call at 0x8004324 (target may be in a register)
+Indirect call at 0x800432E (target may be in a register)
+Indirect call at 0x8004338 (target may be in a register)
+Indirect call at 0x8004342 (target may be in a register)
+Indirect call at 0x8004370 (target may be in a register)
+Indirect call at 0x800437A (target may be in a register)
+Indirect call at 0x8004384 (target may be in a register)
+Indirect call at 0x800438C (target may be in a register)
+Indirect call at 0x80043D2 (target may be in a register)
+Indirect call at 0x80043DC (target may be in a register)
+Indirect call at 0x80043E6 (target may be in a register)
+Indirect call at 0x80043FC (target may be in a register)
+Indirect call at 0x800442C (target may be in a register)
+Indirect call at 0x8004436 (target may be in a register)
+Indirect call at 0x80044A6 (target may be in a register)
+Indirect call at 0x80044DC (target may be in a register)
+Indirect call at 0x8004500 (target may be in a register)
+Indirect call at 0x8004526 (target may be in a register)
+Indirect call at 0x8004544 (target may be in a register)
+Indirect call at 0x8004558 (target may be in a register)
+Indirect call at 0x8004564 (target may be in a register)
+Indirect call at 0x8004578 (target may be in a register)
+Indirect call at 0x800459E (target may be in a register)
+Indirect call at 0x80045B8 (target may be in a register)
+Indirect call at 0x8004634 (target may be in a register)
+Indirect call at 0x8004694 (target may be in a register)
+Indirect call at 0x80046AC (target may be in a register)
+Indirect call at 0x80046C8 (target may be in a register)
+Indirect call at 0x800475A (target may be in a register)
+Indirect call at 0x8004764 (target may be in a register)
+Indirect call at 0x800476C (target may be in a register)
+Indirect call at 0x8004772 (target may be in a register)
+Indirect call at 0x800477E (target may be in a register)
+Indirect call at 0x8004786 (target may be in a register)
+Indirect call at 0x800478E (target may be in a register)
+Indirect call at 0x8004794 (target may be in a register)
+Indirect call at 0x800479A (target may be in a register)
+Indirect call at 0x80047A0 (target may be in a register)
+Indirect call at 0x80047E4 (target may be in a register)
+Indirect call at 0x80047EE (target may be in a register)
+Indirect call at 0x80047F6 (target may be in a register)
+Indirect call at 0x80047FE (target may be in a register)
+Indirect call at 0x8004804 (target may be in a register)
+Indirect call at 0x800480A (target may be in a register)
+Indirect call at 0x8004830 (target may be in a register)
+Indirect call at 0x8004858 (target may be in a register)
+Indirect call at 0x8004862 (target may be in a register)
+Indirect call at 0x800486A (target may be in a register)
+Indirect call at 0x8004874 (target may be in a register)
+Indirect call at 0x800487C (target may be in a register)
+Indirect call at 0x8004884 (target may be in a register)
+Indirect call at 0x800488A (target may be in a register)
+Indirect call at 0x8004890 (target may be in a register)
+Indirect call at 0x8004898 (target may be in a register)
+Indirect call at 0x80048A2 (target may be in a register)
+Indirect call at 0x80048AA (target may be in a register)
+Indirect call at 0x80048B2 (target may be in a register)
+Indirect call at 0x80048B8 (target may be in a register)
+Indirect call at 0x80048BE (target may be in a register)
+Indirect call at 0x80048C6 (target may be in a register)
+Indirect call at 0x80048D0 (target may be in a register)
+Indirect call at 0x80048D8 (target may be in a register)
+Indirect call at 0x80048E0 (target may be in a register)
+Indirect call at 0x80048E6 (target may be in a register)
+Indirect call at 0x80048EC (target may be in a register)
+Indirect call at 0x80048FA (target may be in a register)
+Indirect call at 0x8004906 (target may be in a register)
+Indirect call at 0x8004912 (target may be in a register)
+Indirect call at 0x800491C (target may be in a register)
+Indirect call at 0x8004970 (target may be in a register)
+Indirect call at 0x800498C (target may be in a register)
+Indirect call at 0x8004994 (target may be in a register)
+Indirect call at 0x800499C (target may be in a register)
+Indirect call at 0x80049A6 (target may be in a register)
+Indirect call at 0x80049AE (target may be in a register)
+Indirect call at 0x80049B6 (target may be in a register)
+Indirect call at 0x80049BC (target may be in a register)
+Indirect call at 0x80049C2 (target may be in a register)
+Indirect call at 0x80049CA (target may be in a register)
+Indirect call at 0x80049D4 (target may be in a register)
+Indirect call at 0x80049DC (target may be in a register)
+Indirect call at 0x80049E4 (target may be in a register)
+Indirect call at 0x80049EA (target may be in a register)
+Indirect call at 0x80049F0 (target may be in a register)
+Indirect call at 0x80049F8 (target may be in a register)
+Indirect call at 0x8004A02 (target may be in a register)
+Indirect call at 0x8004A0A (target may be in a register)
+Indirect call at 0x8004A12 (target may be in a register)
+Indirect call at 0x8004A18 (target may be in a register)
+Indirect call at 0x8004A1E (target may be in a register)
+Indirect call at 0x8004A26 (target may be in a register)
+Indirect call at 0x8004A30 (target may be in a register)
+Indirect call at 0x8004A38 (target may be in a register)
+Indirect call at 0x8004A40 (target may be in a register)
+Indirect call at 0x8004A46 (target may be in a register)
+Indirect call at 0x8004A4C (target may be in a register)
+Indirect call at 0x8004A50 (target may be in a register)
+Indirect call at 0x8004A5A (target may be in a register)
+Indirect call at 0x8004A64 (target may be in a register)
+Indirect call at 0x8004A6C (target may be in a register)
+Indirect call at 0x8004A74 (target may be in a register)
+Indirect call at 0x8004A7A (target may be in a register)
+Indirect call at 0x8004A80 (target may be in a register)
+Indirect call at 0x8004A84 (target may be in a register)
+Indirect call at 0x8004A8E (target may be in a register)
+Indirect call at 0x8004A92 (target may be in a register)
+Indirect call at 0x8004AE6 (target may be in a register)
+Indirect call at 0x8004AF0 (target may be in a register)
+Indirect call at 0x8004B0E (target may be in a register)
+Indirect call at 0x8004B2A (target may be in a register)
+Indirect call at 0x8004B3C (target may be in a register)
+Indirect call at 0x8004B48 (target may be in a register)
+Indirect call at 0x8004B4C (target may be in a register)
+Indirect call at 0x8004B54 (target may be in a register)
+Indirect call at 0x8004B58 (target may be in a register)
+Indirect call at 0x8004B60 (target may be in a register)
+Indirect call at 0x8004B68 (target may be in a register)
+Indirect call at 0x8004B70 (target may be in a register)
+Indirect call at 0x8004B74 (target may be in a register)
+Indirect call at 0x8004BA0 (target may be in a register)
+Indirect call at 0x8004BA8 (target may be in a register)
+Indirect call at 0x8004BAC (target may be in a register)
+Indirect call at 0x8004BFE (target may be in a register)
+Indirect call at 0x8004C0A (target may be in a register)
+Indirect call at 0x8004C1E (target may be in a register)
+Indirect call at 0x8004C26 (target may be in a register)
+Indirect call at 0x8004C2E (target may be in a register)
+Indirect call at 0x8004C38 (target may be in a register)
+Indirect call at 0x8004C4E (target may be in a register)
+Indirect call at 0x8004C54 (target may be in a register)
+Indirect call at 0x8004C7C (target may be in a register)
+Indirect call at 0x8004C92 (target may be in a register)
+Indirect call at 0x8004C9A (target may be in a register)
+Indirect call at 0x8004CA2 (target may be in a register)
+Indirect call at 0x8004CAA (target may be in a register)
+Indirect call at 0x8004CB2 (target may be in a register)
+Indirect call at 0x8004CBA (target may be in a register)
+Indirect call at 0x8004CE8 (target may be in a register)
+Indirect call at 0x8004CF0 (target may be in a register)
+Indirect call at 0x8004CF8 (target may be in a register)
+Indirect call at 0x8004D00 (target may be in a register)
+Indirect call at 0x8004D08 (target may be in a register)
+Indirect call at 0x8004D34 (target may be in a register)
+Indirect call at 0x8004D3C (target may be in a register)
+Indirect call at 0x8004D44 (target may be in a register)
+Indirect call at 0x8004D7A (target may be in a register)
+Indirect call at 0x8004D98 (target may be in a register)
+Indirect call at 0x8004DA0 (target may be in a register)
+Indirect call at 0x8004DA8 (target may be in a register)
+Indirect call at 0x8004E04 (target may be in a register)
+Indirect call at 0x8004E22 (target may be in a register)
+Indirect call at 0x8004E30 (target may be in a register)
+Indirect call at 0x8004E3C (target may be in a register)
+Indirect call at 0x8004E46 (target may be in a register)
+Indirect call at 0x8004E4A (target may be in a register)
+Indirect call at 0x8004E6A (target may be in a register)
+Indirect call at 0x8004E76 (target may be in a register)
+Indirect call at 0x8004ECA (target may be in a register)
+Indirect call at 0x8004EF2 (target may be in a register)
+Indirect call at 0x8004F00 (target may be in a register)
+Indirect call at 0x8004F0C (target may be in a register)
+Indirect call at 0x8004F16 (target may be in a register)
+Indirect call at 0x8004F1A (target may be in a register)
+Indirect call at 0x8004F3C (target may be in a register)
+Indirect call at 0x8004F48 (target may be in a register)
+Indirect call at 0x8004F82 (target may be in a register)
+Indirect call at 0x8004F96 (target may be in a register)
+Indirect call at 0x8005008 (target may be in a register)
+Indirect call at 0x800502E (target may be in a register)
+Indirect call at 0x800503A (target may be in a register)
+Indirect call at 0x800507A (target may be in a register)
+Indirect call at 0x8005088 (target may be in a register)
+Indirect call at 0x8005092 (target may be in a register)
+Indirect call at 0x8005096 (target may be in a register)
+Indirect call at 0x80050AE (target may be in a register)
+Indirect call at 0x80050C0 (target may be in a register)
+Indirect call at 0x800510A (target may be in a register)
+Indirect call at 0x800512C (target may be in a register)
+Indirect call at 0x800513E (target may be in a register)
+Indirect call at 0x800514A (target may be in a register)
+Indirect call at 0x8005154 (target may be in a register)
+Indirect call at 0x8005158 (target may be in a register)
+Indirect call at 0x800517A (target may be in a register)
+Indirect call at 0x8005186 (target may be in a register)
+Indirect call at 0x8005198 (target may be in a register)
+Indirect call at 0x80051EE (target may be in a register)
+Indirect call at 0x8005214 (target may be in a register)
+Indirect call at 0x8005220 (target may be in a register)
+Indirect call at 0x8005252 (target may be in a register)
+Indirect call at 0x8005294 (target may be in a register)
+Indirect call at 0x80052A6 (target may be in a register)
+Indirect call at 0x80052B0 (target may be in a register)
+Indirect call at 0x80052B4 (target may be in a register)
+Indirect call at 0x800532A (target may be in a register)
+Indirect call at 0x8005350 (target may be in a register)
+Indirect call at 0x800535C (target may be in a register)
+Indirect call at 0x800538C (target may be in a register)
+Indirect call at 0x800539A (target may be in a register)
+Indirect call at 0x80053B2 (target may be in a register)
+Indirect call at 0x80053D4 (target may be in a register)
+Indirect call at 0x80053E2 (target may be in a register)
+Indirect call at 0x80053EE (target may be in a register)
+Indirect call at 0x80053F8 (target may be in a register)
+Indirect call at 0x800544A (target may be in a register)
+Indirect call at 0x8005470 (target may be in a register)
+Indirect call at 0x800547C (target may be in a register)
+Indirect call at 0x80054AC (target may be in a register)
+Indirect call at 0x80054C0 (target may be in a register)
+Indirect call at 0x80054D0 (target may be in a register)
+Indirect call at 0x80054F2 (target may be in a register)
+Indirect call at 0x8005504 (target may be in a register)
+Indirect call at 0x8005510 (target may be in a register)
+Indirect call at 0x800551A (target may be in a register)
+Indirect call at 0x8005584 (target may be in a register)
+Indirect call at 0x80055A0 (target may be in a register)
+Indirect call at 0x80055A8 (target may be in a register)
+Indirect call at 0x80055B8 (target may be in a register)
+Indirect call at 0x80055D2 (target may be in a register)
+Indirect call at 0x80055DC (target may be in a register)
+Indirect call at 0x80055E8 (target may be in a register)
+Indirect call at 0x80055F0 (target may be in a register)
+Indirect call at 0x80055FE (target may be in a register)
+Indirect call at 0x800560C (target may be in a register)
+Indirect call at 0x8005632 (target may be in a register)
+Indirect call at 0x8005654 (target may be in a register)
+Indirect call at 0x800565C (target may be in a register)
+Indirect call at 0x8005666 (target may be in a register)
+Indirect call at 0x8005670 (target may be in a register)
+Indirect call at 0x800567A (target may be in a register)
+Indirect call at 0x8005684 (target may be in a register)
+Indirect call at 0x800568E (target may be in a register)
+Indirect call at 0x8005698 (target may be in a register)
+Indirect call at 0x80056A2 (target may be in a register)
+Indirect call at 0x80056AC (target may be in a register)
+Indirect call at 0x80056BA (target may be in a register)
+Indirect call at 0x80056C2 (target may be in a register)
+Indirect call at 0x80056CA (target may be in a register)
+Indirect call at 0x80056D8 (target may be in a register)
+Indirect call at 0x80056E0 (target may be in a register)
+Indirect call at 0x80056EA (target may be in a register)
+Indirect call at 0x80056F4 (target may be in a register)
+Indirect call at 0x80056FE (target may be in a register)
+Indirect call at 0x8005706 (target may be in a register)
+Indirect call at 0x800570E (target may be in a register)
+Indirect call at 0x8005716 (target may be in a register)
+Indirect call at 0x800571E (target may be in a register)
+Indirect call at 0x800572A (target may be in a register)
+Indirect call at 0x8005734 (target may be in a register)
+Indirect call at 0x800573A (target may be in a register)
+Indirect call at 0x8005784 (target may be in a register)
+Indirect call at 0x8005790 (target may be in a register)
+Indirect call at 0x80057AA (target may be in a register)
+Indirect call at 0x80057C4 (target may be in a register)
+Indirect call at 0x80057D2 (target may be in a register)
+Indirect call at 0x80057E0 (target may be in a register)
+Indirect call at 0x80057F6 (target may be in a register)
+Indirect call at 0x8005800 (target may be in a register)
+Indirect call at 0x8005808 (target may be in a register)
+Indirect call at 0x8005810 (target may be in a register)
+Indirect call at 0x8005816 (target may be in a register)
+Indirect call at 0x800581C (target may be in a register)
+Indirect call at 0x8005832 (target may be in a register)
+Indirect call at 0x800584A (target may be in a register)
+Indirect call at 0x800588A (target may be in a register)
+Indirect call at 0x8005894 (target may be in a register)
+Indirect call at 0x800589C (target may be in a register)
+Indirect call at 0x80058A4 (target may be in a register)
+Indirect call at 0x80058AA (target may be in a register)
+Indirect call at 0x80058B0 (target may be in a register)
+Indirect call at 0x80058BA (target may be in a register)
+Indirect call at 0x80058CA (target may be in a register)
+Indirect call at 0x80058FE (target may be in a register)
+Indirect call at 0x800590A (target may be in a register)
+Indirect call at 0x8005912 (target may be in a register)
+Indirect call at 0x800591A (target may be in a register)
+Indirect call at 0x8005922 (target may be in a register)
+Indirect call at 0x8005936 (target may be in a register)
+Indirect call at 0x800594C (target may be in a register)
+Indirect call at 0x8005954 (target may be in a register)
+Indirect call at 0x800595C (target may be in a register)
+Indirect call at 0x800596C (target may be in a register)
+Indirect call at 0x8005974 (target may be in a register)
+Indirect call at 0x8005980 (target may be in a register)
+Indirect call at 0x800598E (target may be in a register)
+Indirect call at 0x80059A8 (target may be in a register)
+Indirect call at 0x80059BE (target may be in a register)
+Indirect call at 0x80059C6 (target may be in a register)
+Indirect call at 0x80059CE (target may be in a register)
+Indirect call at 0x80059D4 (target may be in a register)
+Indirect call at 0x80059DA (target may be in a register)
+Indirect call at 0x80059E4 (target may be in a register)
+Indirect call at 0x80059EC (target may be in a register)
+Indirect call at 0x80059F4 (target may be in a register)
+Indirect call at 0x8005A04 (target may be in a register)
+Indirect call at 0x8005A0C (target may be in a register)
+Indirect call at 0x8005A74 (target may be in a register)
+Indirect call at 0x8005A7E (target may be in a register)
+Indirect call at 0x8005A8E (target may be in a register)
+Indirect call at 0x8005A9C (target may be in a register)
+Indirect call at 0x8005AA6 (target may be in a register)
+Indirect call at 0x8005AB2 (target may be in a register)
+Indirect call at 0x8005B0A (target may be in a register)
+Indirect call at 0x8005B16 (target may be in a register)
+Indirect call at 0x8005B28 (target may be in a register)
+Indirect call at 0x8005B30 (target may be in a register)
+Indirect call at 0x8005B38 (target may be in a register)
+Indirect call at 0x8005B3E (target may be in a register)
+Indirect call at 0x8005B4A (target may be in a register)
+Indirect call at 0x8005B52 (target may be in a register)
+Indirect call at 0x8005B56 (target may be in a register)
+Indirect call at 0x8005B62 (target may be in a register)
+Indirect call at 0x8005B7E (target may be in a register)
+Indirect call at 0x8005B8A (target may be in a register)
+Indirect call at 0x8005B92 (target may be in a register)
+Indirect call at 0x8005B98 (target may be in a register)
+Indirect call at 0x8005BA4 (target may be in a register)
+Indirect call at 0x8005BAA (target may be in a register)
+Indirect call at 0x8005BB0 (target may be in a register)
+Indirect call at 0x8005BB6 (target may be in a register)
+Indirect call at 0x8005BBC (target may be in a register)
+Indirect call at 0x8005BCA (target may be in a register)
+Indirect call at 0x8005BD2 (target may be in a register)
+Indirect call at 0x8005BDA (target may be in a register)
+Indirect call at 0x8005BE0 (target may be in a register)
+Indirect call at 0x8005BFC (target may be in a register)
+Indirect call at 0x8005C14 (target may be in a register)
+Indirect call at 0x8005C38 (target may be in a register)
+Indirect call at 0x8005C46 (target may be in a register)
+Indirect call at 0x8005C94 (target may be in a register)
+Indirect call at 0x8005CAC (target may be in a register)
+Indirect call at 0x8005CD0 (target may be in a register)
+Indirect call at 0x8005CDE (target may be in a register)
+Indirect call at 0x8005D2C (target may be in a register)
+Indirect call at 0x8005D44 (target may be in a register)
+Indirect call at 0x8005D68 (target may be in a register)
+Indirect call at 0x8005D76 (target may be in a register)
+Indirect call at 0x8005DC4 (target may be in a register)
+Indirect call at 0x8005DDC (target may be in a register)
+Indirect call at 0x8005E00 (target may be in a register)
+Indirect call at 0x8005E0E (target may be in a register)
+Indirect call at 0x8005E7E (target may be in a register)
+Indirect call at 0x8005E8C (target may be in a register)
+Indirect call at 0x8005E92 (target may be in a register)
+Indirect call at 0x8005E9E (target may be in a register)
+Indirect call at 0x8005EA6 (target may be in a register)
+Indirect call at 0x8005ECA (target may be in a register)
+Indirect call at 0x8005ED8 (target may be in a register)
+Indirect call at 0x8005EDE (target may be in a register)
+Indirect call at 0x8005EEA (target may be in a register)
+Indirect call at 0x8005EF2 (target may be in a register)
+Indirect call at 0x8005F16 (target may be in a register)
+Indirect call at 0x8005F24 (target may be in a register)
+Indirect call at 0x8005F2A (target may be in a register)
+Indirect call at 0x8005F36 (target may be in a register)
+Indirect call at 0x8005F3E (target may be in a register)
+Indirect call at 0x8005F70 (target may be in a register)
+Indirect call at 0x8005F78 (target may be in a register)
+Indirect call at 0x8005FAA (target may be in a register)
+Indirect call at 0x8005FB6 (target may be in a register)
+Indirect call at 0x8005FDA (target may be in a register)
+Indirect call at 0x8005FE2 (target may be in a register)
+Indirect call at 0x8005FF0 (target may be in a register)
+Indirect call at 0x8005FFC (target may be in a register)
+Indirect call at 0x8006004 (target may be in a register)
+Indirect call at 0x8006020 (target may be in a register)
+Indirect call at 0x8006078 (target may be in a register)
+Indirect call at 0x8006092 (target may be in a register)
+Indirect call at 0x80060B6 (target may be in a register)
+Indirect call at 0x80060BE (target may be in a register)
+Indirect call at 0x80060C6 (target may be in a register)
+Indirect call at 0x80060E0 (target may be in a register)
+Indirect call at 0x80060F8 (target may be in a register)
+Indirect call at 0x8006100 (target may be in a register)
+Indirect call at 0x8006108 (target may be in a register)
+Indirect call at 0x8006110 (target may be in a register)
+Indirect call at 0x8006118 (target may be in a register)
+Indirect call at 0x800611E (target may be in a register)
+Indirect call at 0x8006124 (target may be in a register)
+Indirect call at 0x800612C (target may be in a register)
+Indirect call at 0x8006134 (target may be in a register)
+Indirect call at 0x800613C (target may be in a register)
+Indirect call at 0x8006144 (target may be in a register)
+Indirect call at 0x800614A (target may be in a register)
+Indirect call at 0x8006150 (target may be in a register)
+Indirect call at 0x800618A (target may be in a register)
+Indirect call at 0x80061A2 (target may be in a register)
+Indirect call at 0x80061B4 (target may be in a register)
+Indirect call at 0x80061BA (target may be in a register)
+Indirect call at 0x80061C0 (target may be in a register)
+Indirect call at 0x80061C6 (target may be in a register)
+Indirect call at 0x80061CC (target may be in a register)
+Indirect call at 0x8006232 (target may be in a register)
+Indirect call at 0x800623A (target may be in a register)
+Indirect call at 0x8006246 (target may be in a register)
+Indirect call at 0x8006258 (target may be in a register)
+Indirect call at 0x8006260 (target may be in a register)
+Indirect call at 0x800626C (target may be in a register)
+Indirect call at 0x8006274 (target may be in a register)
+Indirect call at 0x80062B0 (target may be in a register)
+Indirect call at 0x80062C0 (target may be in a register)
+Indirect call at 0x80062CA (target may be in a register)
+Indirect call at 0x80062D8 (target may be in a register)
+Indirect call at 0x80062E8 (target may be in a register)
+Indirect call at 0x80062F2 (target may be in a register)
+Indirect call at 0x80062FA (target may be in a register)
+Indirect call at 0x8006302 (target may be in a register)
+Indirect call at 0x800641C (target may be in a register)
+Indirect call at 0x8006424 (target may be in a register)
+Indirect call at 0x8006430 (target may be in a register)
+Indirect call at 0x800644C (target may be in a register)
+Indirect call at 0x8006458 (target may be in a register)
+Indirect call at 0x8006598 (target may be in a register)
+Indirect call at 0x80065A2 (target may be in a register)
+Indirect call at 0x80065AA (target may be in a register)
+Indirect call at 0x80065B6 (target may be in a register)
+Indirect call at 0x80065C0 (target may be in a register)
+Indirect call at 0x80065E0 (target may be in a register)
+Indirect call at 0x80065EA (target may be in a register)
+Indirect call at 0x80065F0 (target may be in a register)
+Indirect call at 0x8006604 (target may be in a register)
+Indirect call at 0x800660E (target may be in a register)
+Indirect call at 0x8006614 (target may be in a register)
+Indirect call at 0x8006628 (target may be in a register)
+Indirect call at 0x8006632 (target may be in a register)
+Indirect call at 0x8006638 (target may be in a register)
+Indirect call at 0x8006650 (target may be in a register)
+Indirect call at 0x800665A (target may be in a register)
+Indirect call at 0x8006660 (target may be in a register)
+Indirect call at 0x8006678 (target may be in a register)
+Indirect call at 0x8006682 (target may be in a register)
+Indirect call at 0x8006688 (target may be in a register)
+Indirect call at 0x80066A0 (target may be in a register)
+Indirect call at 0x80066AA (target may be in a register)
+Indirect call at 0x80066B0 (target may be in a register)
+Indirect call at 0x80066C8 (target may be in a register)
+Indirect call at 0x80066D2 (target may be in a register)
+Indirect call at 0x80066D8 (target may be in a register)
+Indirect call at 0x8006794 (target may be in a register)
+Indirect call at 0x800679E (target may be in a register)
+Indirect call at 0x80067BC (target may be in a register)
+Indirect call at 0x80067E2 (target may be in a register)
+Indirect call at 0x80067E8 (target may be in a register)
+Indirect call at 0x8006820 (target may be in a register)
+Indirect call at 0x8006836 (target may be in a register)
+Indirect call at 0x800684A (target may be in a register)
+Indirect call at 0x8006868 (target may be in a register)
+Indirect call at 0x8006874 (target may be in a register)
+Indirect call at 0x80068AC (target may be in a register)
+Indirect call at 0x80068B4 (target may be in a register)
+Indirect call at 0x80068C2 (target may be in a register)
+Indirect call at 0x80068CE (target may be in a register)
+Indirect call at 0x80068DA (target may be in a register)
+Indirect call at 0x80068E6 (target may be in a register)
+Indirect call at 0x80068F2 (target may be in a register)
+Indirect call at 0x800691C (target may be in a register)
+Indirect call at 0x8006948 (target may be in a register)
+Indirect call at 0x800695A (target may be in a register)
+Indirect call at 0x8006966 (target may be in a register)
+Indirect call at 0x8006972 (target may be in a register)
+Indirect call at 0x8006990 (target may be in a register)
+Indirect call at 0x80069A0 (target may be in a register)
+Indirect call at 0x80069AA (target may be in a register)
+Indirect call at 0x80069B2 (target may be in a register)
+Indirect call at 0x80069BA (target may be in a register)
+Indirect call at 0x80069CC (target may be in a register)
+Indirect call at 0x80069D4 (target may be in a register)
+Indirect call at 0x80069E0 (target may be in a register)
+Indirect call at 0x80069E6 (target may be in a register)
+Indirect call at 0x80069EE (target may be in a register)
+Indirect call at 0x80069F2 (target may be in a register)
+Indirect call at 0x8006AA2 (target may be in a register)
+Indirect call at 0x8006B42 (target may be in a register)
+Indirect call at 0x8006B4A (target may be in a register)
+Indirect call at 0x8006B5A (target may be in a register)
+Indirect call at 0x8006B70 (target may be in a register)
+Indirect call at 0x8006B76 (target may be in a register)
+Indirect call at 0x8006B7E (target may be in a register)
+Indirect call at 0x8006B96 (target may be in a register)
+Indirect call at 0x8006BA4 (target may be in a register)
+Indirect call at 0x8006BE6 (target may be in a register)
+Indirect call at 0x8006C0E (target may be in a register)
+Indirect call at 0x8006C1A (target may be in a register)
+Indirect call at 0x8006C2C (target may be in a register)
+Indirect call at 0x8006C3A (target may be in a register)
+Indirect call at 0x8006C5E (target may be in a register)
+Indirect call at 0x8006C84 (target may be in a register)
+Indirect call at 0x8006CA8 (target may be in a register)
+Indirect call at 0x8006CC6 (target may be in a register)
+Indirect call at 0x8006CDC (target may be in a register)
+Indirect call at 0x8006CEC (target may be in a register)
+Indirect call at 0x8006D34 (target may be in a register)
+Indirect call at 0x8006D42 (target may be in a register)
+Indirect call at 0x8006D6C (target may be in a register)
+Indirect call at 0x8006D74 (target may be in a register)
+Indirect call at 0x8006D84 (target may be in a register)
+Indirect call at 0x8006D8A (target may be in a register)
+Indirect call at 0x8006DBC (target may be in a register)
+Indirect call at 0x8006DC2 (target may be in a register)
+Indirect call at 0x8006E1C (target may be in a register)
+Indirect call at 0x8006E5E (target may be in a register)
+Indirect call at 0x8006E68 (target may be in a register)
+Indirect call at 0x8006E7E (target may be in a register)
+Indirect call at 0x8006EAA (target may be in a register)
+Indirect call at 0x8006EBA (target may be in a register)
+Indirect call at 0x8006EC8 (target may be in a register)
+Indirect call at 0x8006F22 (target may be in a register)
+Indirect call at 0x8006F2C (target may be in a register)
+Indirect call at 0x8006F40 (target may be in a register)
+Indirect call at 0x8006F8A (target may be in a register)
+Indirect call at 0x8006F92 (target may be in a register)
+Indirect call at 0x8006FEC (target may be in a register)
+Indirect call at 0x8006FF4 (target may be in a register)
+Indirect call at 0x8007000 (target may be in a register)
+Indirect call at 0x8007008 (target may be in a register)
+Indirect call at 0x800700E (target may be in a register)
+Indirect call at 0x8007088 (target may be in a register)
+Indirect call at 0x8007090 (target may be in a register)
+Indirect call at 0x8007096 (target may be in a register)
+Indirect call at 0x800709E (target may be in a register)
+Indirect call at 0x80070A6 (target may be in a register)
+Indirect call at 0x8007118 (target may be in a register)
+Indirect call at 0x8007198 (target may be in a register)
+Indirect call at 0x80071DC (target may be in a register)
+Indirect call at 0x8007208 (target may be in a register)
+Indirect call at 0x8007210 (target may be in a register)
+Indirect call at 0x8007222 (target may be in a register)
+Indirect call at 0x800722A (target may be in a register)
+Indirect call at 0x8007236 (target may be in a register)
+Indirect call at 0x800723E (target may be in a register)
+Indirect call at 0x8007248 (target may be in a register)
+Indirect call at 0x80072A8 (target may be in a register)
+Indirect call at 0x80072C4 (target may be in a register)
+Indirect call at 0x800730A (target may be in a register)
+Indirect call at 0x8007426 (target may be in a register)
+Indirect call at 0x80074A8 (target may be in a register)
+Indirect call at 0x80074BE (target may be in a register)
+Indirect call at 0x80074E2 (target may be in a register)
+Indirect call at 0x80074F8 (target may be in a register)
+Indirect call at 0x8007520 (target may be in a register)
+Indirect call at 0x8007548 (target may be in a register)
+Indirect call at 0x8007564 (target may be in a register)
+Indirect call at 0x8007582 (target may be in a register)
+Indirect call at 0x8007596 (target may be in a register)
+Indirect call at 0x80075B0 (target may be in a register)
+Indirect call at 0x80075C4 (target may be in a register)
+Indirect call at 0x80075DA (target may be in a register)
+Indirect call at 0x8007648 (target may be in a register)
+Indirect call at 0x800765C (target may be in a register)
+Indirect call at 0x800770E (target may be in a register)
+Indirect call at 0x8007748 (target may be in a register)
+Indirect call at 0x8007820 (target may be in a register)
+Indirect call at 0x8007864 (target may be in a register)
+Indirect call at 0x800789E (target may be in a register)
+Indirect call at 0x80078EC (target may be in a register)
+Indirect call at 0x800797A (target may be in a register)
+Indirect call at 0x80079E8 (target may be in a register)
+Indirect call at 0x8007A38 (target may be in a register)
+Indirect call at 0x8007A62 (target may be in a register)
+Indirect call at 0x8007AA6 (target may be in a register)
+Indirect call at 0x8007AF4 (target may be in a register)
+Indirect call at 0x8007B6C (target may be in a register)
+Indirect call at 0x8007BAE (target may be in a register)
+Indirect call at 0x8007C20 (target may be in a register)
+Indirect call at 0x8007CAE (target may be in a register)
+Indirect call at 0x8007DA2 (target may be in a register)
+Indirect call at 0x8007DFC (target may be in a register)
+Indirect call at 0x8007E14 (target may be in a register)
+Indirect call at 0x8007E20 (target may be in a register)
+Indirect call at 0x8007E2A (target may be in a register)
+Indirect call at 0x8007E8E (target may be in a register)
+Indirect call at 0x8007E9A (target may be in a register)
+Indirect call at 0x8007EB4 (target may be in a register)
+Indirect call at 0x8007EEE (target may be in a register)
+Indirect call at 0x8007EFC (target may be in a register)
+Indirect call at 0x8007F10 (target may be in a register)
+Indirect call at 0x8007F1A (target may be in a register)
+Indirect call at 0x8007F28 (target may be in a register)
+Indirect call at 0x8007F36 (target may be in a register)
+Indirect call at 0x8007F58 (target may be in a register)
+Indirect call at 0x8007FDA (target may be in a register)
+Indirect call at 0x8008020 (target may be in a register)
+Indirect call at 0x8008058 (target may be in a register)
+Indirect call at 0x8008084 (target may be in a register)
+Indirect call at 0x8008094 (target may be in a register)
+Indirect call at 0x800809E (target may be in a register)
+Indirect call at 0x80080A4 (target may be in a register)
+Indirect call at 0x80080AE (target may be in a register)
+Indirect call at 0x80080B4 (target may be in a register)
+Indirect call at 0x80080BE (target may be in a register)
+Indirect call at 0x80080CC (target may be in a register)
+Indirect call at 0x80080D6 (target may be in a register)
+Indirect call at 0x80080E2 (target may be in a register)
+Indirect call at 0x80080EC (target may be in a register)
+Indirect call at 0x80080FE (target may be in a register)
+Indirect call at 0x8008108 (target may be in a register)
+Indirect call at 0x8008144 (target may be in a register)
+Indirect call at 0x800814E (target may be in a register)
+Indirect call at 0x80081D0 (target may be in a register)
+Indirect call at 0x800822C (target may be in a register)
+Indirect call at 0x8008236 (target may be in a register)
+Indirect call at 0x8008324 (target may be in a register)
+Indirect call at 0x8008352 (target may be in a register)
+Indirect call at 0x800835A (target may be in a register)
+Indirect call at 0x8008362 (target may be in a register)
+Indirect call at 0x800836C (target may be in a register)
+Indirect call at 0x8008374 (target may be in a register)
+Indirect call at 0x8008386 (target may be in a register)
+Indirect call at 0x8008390 (target may be in a register)
+Indirect call at 0x800839A (target may be in a register)
+Indirect call at 0x80083C6 (target may be in a register)
+Indirect call at 0x8008650 (target may be in a register)
+Indirect call at 0x800865A (target may be in a register)
+Indirect call at 0x800866A (target may be in a register)
+Indirect call at 0x8008676 (target may be in a register)
+Indirect call at 0x800869C (target may be in a register)
+Indirect call at 0x80086AA (target may be in a register)
+Indirect call at 0x80086B2 (target may be in a register)
+Indirect call at 0x80086CE (target may be in a register)
+Indirect call at 0x80086E4 (target may be in a register)
+Indirect call at 0x80086F2 (target may be in a register)
+Indirect call at 0x80086FC (target may be in a register)
+Indirect call at 0x800870A (target may be in a register)
+Indirect call at 0x8008718 (target may be in a register)
+Indirect call at 0x8008736 (target may be in a register)
+Indirect call at 0x80087AE (target may be in a register)
+Indirect call at 0x80087C0 (target may be in a register)
+Indirect call at 0x80087E4 (target may be in a register)
+Indirect call at 0x80087F6 (target may be in a register)
+Indirect call at 0x8008808 (target may be in a register)
+Indirect call at 0x8008814 (target may be in a register)
+Indirect call at 0x800888E (target may be in a register)
+Indirect call at 0x800889E (target may be in a register)
+Indirect call at 0x8008918 (target may be in a register)
+Indirect call at 0x800893A (target may be in a register)
+Indirect call at 0x8008964 (target may be in a register)
+Indirect call at 0x800896E (target may be in a register)
+Indirect call at 0x8008992 (target may be in a register)
+Indirect call at 0x80089A8 (target may be in a register)
+Indirect call at 0x80089B8 (target may be in a register)
+Indirect call at 0x80089D2 (target may be in a register)
+Indirect call at 0x80089DA (target may be in a register)
+Indirect call at 0x80089F6 (target may be in a register)
+Indirect call at 0x8008A06 (target may be in a register)
+Indirect call at 0x8008A4C (target may be in a register)
+Indirect call at 0x8008A64 (target may be in a register)
+Indirect call at 0x8008B36 (target may be in a register)
+Indirect call at 0x8008B3C (target may be in a register)
+Indirect call at 0x8008B58 (target may be in a register)
+Indirect call at 0x8008B6C (target may be in a register)
+Indirect call at 0x8008B7E (target may be in a register)
+Indirect call at 0x8008B8A (target may be in a register)
+Indirect call at 0x8008BBC (target may be in a register)
+Indirect call at 0x8008C48 (target may be in a register)
+Indirect call at 0x8008C54 (target may be in a register)
+Indirect call at 0x8008C78 (target may be in a register)
+Indirect call at 0x8008CDA (target may be in a register)
+Indirect call at 0x8008CEE (target may be in a register)
+Indirect call at 0x8008D10 (target may be in a register)
+Indirect call at 0x8008D20 (target may be in a register)
+Indirect call at 0x8008D30 (target may be in a register)
+Indirect call at 0x8008D38 (target may be in a register)
+Indirect call at 0x8008D44 (target may be in a register)
+Indirect call at 0x8008D4C (target may be in a register)
+Indirect call at 0x8008D8A (target may be in a register)
+Indirect call at 0x8008DC0 (target may be in a register)
+Indirect call at 0x8008DCC (target may be in a register)
+Indirect call at 0x8008DDE (target may be in a register)
+Indirect call at 0x8008DE6 (target may be in a register)
+Indirect call at 0x8008DF2 (target may be in a register)
+Indirect call at 0x8008DFE (target may be in a register)
+Indirect call at 0x8008E04 (target may be in a register)
+Indirect call at 0x8008E2C (target may be in a register)
+Indirect call at 0x8008E4C (target may be in a register)
+Indirect call at 0x8008EC0 (target may be in a register)
+Indirect call at 0x8008ECA (target may be in a register)
+Indirect call at 0x8008ED0 (target may be in a register)
+Indirect call at 0x8008F42 (target may be in a register)
+Indirect call at 0x8008F52 (target may be in a register)
+Indirect call at 0x8008F6A (target may be in a register)
+Indirect call at 0x8008F88 (target may be in a register)
+Indirect call at 0x8008FA4 (target may be in a register)
+Indirect call at 0x8008FAC (target may be in a register)
+Indirect call at 0x8008FBA (target may be in a register)
+Indirect call at 0x8008FD2 (target may be in a register)
+Indirect call at 0x8008FDC (target may be in a register)
+Indirect call at 0x8008FFA (target may be in a register)
+Indirect call at 0x8009012 (target may be in a register)
+Indirect call at 0x800902C (target may be in a register)
+Indirect call at 0x8009044 (target may be in a register)
+Indirect call at 0x800904C (target may be in a register)
+Indirect call at 0x800905E (target may be in a register)
+Indirect call at 0x8009070 (target may be in a register)
+Indirect call at 0x800907A (target may be in a register)
+Indirect call at 0x8009082 (target may be in a register)
+Indirect call at 0x800909A (target may be in a register)
+Indirect call at 0x80090A2 (target may be in a register)
+Indirect call at 0x80090BE (target may be in a register)
+Indirect call at 0x80090C6 (target may be in a register)
+Indirect call at 0x80090E4 (target may be in a register)
+Indirect call at 0x80090F4 (target may be in a register)
+Indirect call at 0x800910E (target may be in a register)
+Indirect call at 0x8009120 (target may be in a register)
+Indirect call at 0x8009128 (target may be in a register)
+Indirect call at 0x800913A (target may be in a register)
+Indirect call at 0x8009144 (target may be in a register)
+Indirect call at 0x800914E (target may be in a register)
+Indirect call at 0x8009176 (target may be in a register)
+Indirect call at 0x8009194 (target may be in a register)
+Indirect call at 0x80091D8 (target may be in a register)
+Indirect call at 0x80091F8 (target may be in a register)
+Indirect call at 0x8009222 (target may be in a register)
+Indirect call at 0x8009230 (target may be in a register)
+Indirect call at 0x8009244 (target may be in a register)
+Indirect call at 0x8009356 (target may be in a register)
+Indirect call at 0x8009368 (target may be in a register)
+Indirect call at 0x800936C (target may be in a register)
+Indirect call at 0x8009370 (target may be in a register)
+Indirect call at 0x80093AC (target may be in a register)
+Indirect call at 0x80093D6 (target may be in a register)
+Indirect call at 0x80093DA (target may be in a register)
+Indirect call at 0x800946A (target may be in a register)
+Indirect call at 0x80094A4 (target may be in a register)
+Indirect call at 0x80094E0 (target may be in a register)
+Indirect call at 0x80094EC (target may be in a register)
+Indirect call at 0x800955A (target may be in a register)
+Indirect call at 0x8009562 (target may be in a register)
+Indirect call at 0x80096DE (target may be in a register)
+Indirect call at 0x80096E4 (target may be in a register)
+Indirect call at 0x80096E8 (target may be in a register)
+Indirect call at 0x80096FC (target may be in a register)
+Indirect call at 0x8009718 (target may be in a register)
+Indirect call at 0x800973A (target may be in a register)
+Indirect call at 0x80098BE (target may be in a register)
+Indirect call at 0x80098DA (target may be in a register)
+Indirect call at 0x8009956 (target may be in a register)
+Indirect call at 0x8009960 (target may be in a register)
+Indirect call at 0x800996A (target may be in a register)
+Indirect call at 0x8009974 (target may be in a register)
+Indirect call at 0x8009996 (target may be in a register)
+Indirect call at 0x80099A0 (target may be in a register)
+Indirect call at 0x80099AA (target may be in a register)
+Indirect call at 0x80099DE (target may be in a register)
+Indirect call at 0x8009A4C (target may be in a register)
+Indirect call at 0x8009A54 (target may be in a register)
+Indirect call at 0x8009A5C (target may be in a register)
+Indirect call at 0x8009AE8 (target may be in a register)
+Indirect call at 0x8009B06 (target may be in a register)
+Indirect call at 0x8009B38 (target may be in a register)
+Indirect call at 0x8009B52 (target may be in a register)
+Indirect call at 0x8009BB6 (target may be in a register)
+Indirect call at 0x8009BD8 (target may be in a register)
+Indirect call at 0x8009C0A (target may be in a register)
+Indirect call at 0x8009C10 (target may be in a register)
+Indirect call at 0x8009C48 (target may be in a register)
+Indirect call at 0x8009C52 (target may be in a register)
+Indirect call at 0x8009C70 (target may be in a register)
+Indirect call at 0x8009CAA (target may be in a register)
+Indirect call at 0x8009CBA (target may be in a register)
+Indirect call at 0x8009CDC (target may be in a register)
+Indirect call at 0x8009CEC (target may be in a register)
+Indirect call at 0x8009D2A (target may be in a register)
+Indirect call at 0x8009D70 (target may be in a register)
+Indirect call at 0x8009DC0 (target may be in a register)
+Indirect call at 0x8009DCC (target may be in a register)
+Indirect call at 0x8009DE0 (target may be in a register)
+Indirect call at 0x8009DF4 (target may be in a register)
+Indirect call at 0x8009DFC (target may be in a register)
+Indirect call at 0x8009E14 (target may be in a register)
+Indirect call at 0x8009F78 (target may be in a register)
+Indirect call at 0x8009FA2 (target may be in a register)
+Indirect call at 0x8009FC6 (target may be in a register)
+Indirect call at 0x8009FEC (target may be in a register)
+Indirect call at 0x800A01C (target may be in a register)
+Indirect call at 0x800A034 (target may be in a register)
+Indirect call at 0x800A03E (target may be in a register)
+Indirect call at 0x800A098 (target may be in a register)
+[+] Tracing calls to HAL_GPIO_Init at 0x8000658
+
+Type       Call Addr  Port   Pins
+----------------------------------------
+Indirect   0x800018C Unknown []
+Indirect   0x80001A0 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80001CA 0x3    []
+Indirect   0x80001D0 0x3    []
+Indirect   0x80001D4 0x3    []
+Indirect   0x8000310 Unknown [8, 13, 14, 15]
+Indirect   0x8000328 Unknown []
+Indirect   0x80003DC Unknown []
+Indirect   0x8000498 Unknown []
+Indirect   0x80004C4 0xC    []
+Indirect   0x80004D6 0x1    []
+Indirect   0x800050A 0xC350 []
+Indirect   0x8000558 0xC350 []
+Indirect   0x80005CE 0xC350 []
+Indirect   0x80005F6 0xC350 []
+Indirect   0x8000604 Unknown []
+Indirect   0x8000628 0x4    []
+Indirect   0x8000630 0x4    []
+Indirect   0x8000814 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8000854 Unknown []
+Indirect   0x80008BC 0x1    []
+Indirect   0x80008E0 Unknown []
+Indirect   0x8000A08 Unknown []
+Indirect   0x8000A32 0x1    []
+Indirect   0x8000A52 0x2    [1]
+Indirect   0x8000AAE 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8000ACA 0x3    []
+Indirect   0x8000B20 0x4    [1]
+Indirect   0x8000B2A 0x1    [1]
+Indirect   0x8000B64 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8000E1E Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8000E98 Unknown []
+Indirect   0x8000F04 Unknown []
+Indirect   0x8000F7E 0x34   []
+Indirect   0x8000F98 0x34   []
+Indirect   0x8000FCE 0x4    []
+Indirect   0x8000FF0 0x38   []
+Indirect   0x800104E 0x4    []
+Indirect   0x8001068 0x4    []
+Indirect   0x80013A6 0x4    []
+Indirect   0x800145C Unknown []
+Indirect   0x8001530 Unknown []
+Indirect   0x8001578 0x4    []
+Indirect   0x8001590 0x4    []
+Indirect   0x80016AC 0x4    []
+Indirect   0x8001732 Unknown []
+Indirect   0x8001740 0x38   []
+Indirect   0x800174A 0x38   []
+Indirect   0x8001768 0x4    []
+Indirect   0x8001788 0x4    []
+Indirect   0x80017AE Unknown []
+Indirect   0x80017BC 0x34   []
+Indirect   0x80017C6 0x34   []
+Indirect   0x8001842 0x4    []
+Indirect   0x80018B4 0x4    []
+Indirect   0x8001A3E Unknown []
+Indirect   0x8001A84 0x4    []
+Indirect   0x8001B28 0x1    []
+Indirect   0x8001B34 Unknown []
+Indirect   0x8001B58 0x3    []
+Indirect   0x8001B64 Unknown []
+Indirect   0x8001BCE Unknown []
+Indirect   0x8001BDA Unknown []
+Indirect   0x8001BE8 Unknown []
+Indirect   0x8001BF6 Unknown []
+Indirect   0x8001C10 Unknown []
+Indirect   0x8001C38 Unknown []
+Indirect   0x8001C48 Unknown []
+Indirect   0x8001C56 Unknown []
+Indirect   0x8001C94 Unknown []
+Indirect   0x8001CC0 Unknown []
+Indirect   0x8001CCC Unknown []
+Indirect   0x8001CF0 Unknown []
+Indirect   0x8001CFC Unknown []
+Indirect   0x8001D24 Unknown []
+Indirect   0x8001D56 Unknown []
+Indirect   0x8001D8A Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8001D98 Unknown []
+Indirect   0x8001DA4 Unknown []
+Indirect   0x8001DB0 Unknown []
+Indirect   0x8001DBE Unknown []
+Indirect   0x8001E8E Unknown []
+Indirect   0x8001EA6 Unknown []
+Indirect   0x8001F0C Unknown []
+Indirect   0x8001F20 Unknown []
+Indirect   0x8002022 0x4    []
+Indirect   0x8002226 Unknown []
+Indirect   0x800224C 0x4    []
+Indirect   0x8002270 0x4    []
+Indirect   0x8002296 0x4    []
+Indirect   0x80022B0 0x4    []
+Indirect   0x80022C6 0x4    []
+Indirect   0x80022DC 0x4    []
+Indirect   0x80022FA 0x4    []
+Indirect   0x8002300 0x4    []
+Indirect   0x8002306 0x4    []
+Indirect   0x800230C 0x4    []
+Indirect   0x8002312 0x4    []
+Indirect   0x8002318 0x4    []
+Indirect   0x800231E 0x4    []
+Indirect   0x8002324 0x4    []
+Indirect   0x80023A4 Unknown []
+Indirect   0x80023B2 Unknown []
+Indirect   0x8002468 0x1    []
+Indirect   0x8002470 0x1    []
+Indirect   0x800247A Unknown []
+Indirect   0x8002482 Unknown []
+Indirect   0x80024B8 Unknown []
+Indirect   0x80024D8 Unknown []
+Indirect   0x80024FA Unknown []
+Indirect   0x800251A Unknown []
+Indirect   0x80025AE 0x1    []
+Indirect   0x8002722 Unknown []
+Indirect   0x8002794 Unknown []
+Indirect   0x80028AA Unknown []
+Indirect   0x800298C Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80029B8 Unknown []
+Indirect   0x80029DA Unknown []
+Indirect   0x80029F0 0x4    []
+Indirect   0x8002A38 0x1    []
+Indirect   0x8002A4E 0x4    []
+Indirect   0x8002AC6 0x2    []
+Indirect   0x8002B5A Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8002B7E Unknown []
+Indirect   0x8002BEE 0x4    []
+Indirect   0x8002C08 0x4    []
+Indirect   0x8002C34 0x3C   []
+Indirect   0x8002CA0 0x4    []
+Indirect   0x8002CA8 0x4    []
+Indirect   0x8002D5C 0x3C   []
+Indirect   0x8002D6E 0x3C   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8002E52 0x4    []
+Indirect   0x8002F28 0x1    []
+Indirect   0x8002F3E Unknown []
+Indirect   0x8002FC8 0x3    []
+Indirect   0x8002FDA 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003018 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800303C Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800305A Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003062 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800306C 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003082 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80030CA 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003110 Unknown []
+Indirect   0x800317A 0x8    []
+Indirect   0x800318C 0x8    [2, 5, 8, 9, 13, 15]
+Indirect   0x8003198 0x8    [2, 5, 8, 9, 13, 15]
+Indirect   0x800319E 0x8    [2, 5, 8, 9, 13, 15]
+Indirect   0x80031A6 0x8    []
+Indirect   0x80031CC Unknown []
+Indirect   0x80031E2 Unknown []
+Indirect   0x8003200 Unknown []
+Indirect   0x800321A Unknown []
+Indirect   0x8003234 Unknown []
+Indirect   0x800324E Unknown []
+Indirect   0x8003268 Unknown []
+Indirect   0x8003282 Unknown []
+Indirect   0x8003298 Unknown []
+Indirect   0x80032B2 Unknown []
+Indirect   0x80032CC Unknown []
+Indirect   0x80032DC 0x8    [2, 5, 8, 9, 13, 15]
+Indirect   0x80032F8 0x7    []
+Indirect   0x8003300 0x7    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003324 0x5    []
+Indirect   0x8003330 0x5    []
+Indirect   0x800336C Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003382 0x2    []
+Indirect   0x80033DE 0x2    []
+Indirect   0x80033E6 0x10   []
+Indirect   0x8003404 0x5    []
+Indirect   0x800341A 0x5    []
+Indirect   0x8003458 Unknown []
+Indirect   0x8003468 0x5    []
+Indirect   0x80034A4 Unknown []
+Indirect   0x80034B0 Unknown []
+Indirect   0x80034B6 0x10   []
+Indirect   0x80034C6 0x10   []
+Indirect   0x80034E4 Unknown []
+Indirect   0x8003512 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800352C Unknown []
+Indirect   0x8003544 Unknown []
+Indirect   0x80035A6 0x5    []
+Indirect   0x80035BA 0x5    []
+Indirect   0x800364A 0x5    []
+Indirect   0x800365A 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003678 Unknown []
+Indirect   0x800368C 0x4    []
+Indirect   0x800369E Unknown []
+Indirect   0x80036AA Unknown []
+Indirect   0x80036D0 Unknown []
+Indirect   0x80036E0 Unknown []
+Indirect   0x80037BA Unknown [2, 5, 8, 9, 13, 15]
+Indirect   0x80037BE Unknown [2, 5, 8, 9, 13, 15]
+Indirect   0x80037CE 0xB0   []
+Indirect   0x80037D8 0xB0   [2, 5, 8, 9, 13, 15]
+Indirect   0x80037E0 0xB0   [2, 5, 8, 9, 13, 15]
+Indirect   0x80037F4 0x5    []
+Indirect   0x8003800 0x6    [2, 5, 8, 9, 13, 15]
+Indirect   0x8003816 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003820 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800382C 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003856 Unknown [2, 5, 8, 9, 13, 15]
+Indirect   0x800385A Unknown [2, 5, 8, 9, 13, 15]
+Indirect   0x800386A 0xB0   [2, 5, 8, 9, 13, 15]
+Indirect   0x8003874 0xB0   [2, 5, 8, 9, 13, 15]
+Indirect   0x800387C 0xB0   [2, 5, 8, 9, 13, 15]
+Indirect   0x8003890 0x5    []
+Indirect   0x80038B2 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80038BC Unknown []
+Indirect   0x80038FC Unknown []
+Indirect   0x8003900 Unknown []
+Indirect   0x8003904 Unknown []
+Indirect   0x800398E 0x4    []
+Indirect   0x8003992 0x4    []
+Indirect   0x8003996 0x4    []
+Indirect   0x800399A 0x4    []
+Indirect   0x800399E Unknown []
+Indirect   0x8003A32 0x4    []
+Indirect   0x8003A4A Unknown []
+Indirect   0x8003A7C Unknown []
+Direct     0x8003AB2 Unknown []
+Indirect   0x8003AC2 0x6    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003B00 0x6    []
+Indirect   0x8003B0E 0x6    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003B14 0x6    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003B38 0x2    []
+Indirect   0x8003B44 0x2    []
+Indirect   0x8003B52 Unknown []
+Indirect   0x8003B60 Unknown []
+Indirect   0x8003B70 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003B7C Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003B88 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003B94 Unknown []
+Indirect   0x8003BA0 Unknown []
+Indirect   0x8003BAE Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003BBA Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003BC6 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003BD2 Unknown []
+Indirect   0x8003BDE Unknown []
+Indirect   0x8003BEA Unknown []
+Indirect   0x8003C10 Unknown []
+Indirect   0x8003EB0 Unknown []
+Indirect   0x8003F0A Unknown []
+Indirect   0x8003F14 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003F72 Unknown []
+Indirect   0x8003F7C 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003F8A 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003FB2 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003FC2 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8003FEA 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004268 0x1E   []
+Indirect   0x800426E 0x1C   []
+Indirect   0x8004276 0x1D   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800427C Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004280 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004288 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004290 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800429E 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80042A4 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80042EC 0x2    [2, 5, 8, 9, 13, 15]
+Indirect   0x8004324 Unknown [2, 3, 4, 6, 7, 9, 13, 15]
+Indirect   0x800432E Unknown [2, 3, 4, 6, 7, 9, 13, 15]
+Indirect   0x8004338 0x54   [2, 3, 4, 6, 7, 9, 13, 15]
+Indirect   0x8004342 0x58   [3, 4, 6, 9, 13, 15]
+Indirect   0x8004370 0x6    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800437A 0x6    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004384 0x6    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800438C Unknown []
+Indirect   0x80043D2 0x54   [2, 3, 4, 6, 7, 9, 13, 15]
+Indirect   0x80043DC 0x54   [2, 3, 4, 6, 7, 9, 13, 15]
+Indirect   0x80043E6 0x58   [2, 4, 7, 9, 13, 15]
+Indirect   0x80043FC 0x5C   [3, 4, 6, 9, 13, 15]
+Indirect   0x800442C 0x64   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004436 0x6    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80044A6 Unknown []
+Indirect   0x80044DC 0x3    []
+Indirect   0x8004500 0x3    []
+Indirect   0x8004526 0xFFFFFFFFFFFFFFFF []
+Indirect   0x8004544 0x65   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004558 0x3    []
+Indirect   0x8004564 0x64   []
+Indirect   0x8004578 0x64   []
+Indirect   0x800459E 0x64   []
+Indirect   0x80045B8 0x64   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004634 Unknown []
+Indirect   0x8004694 0x25   []
+Indirect   0x80046AC 0x25   []
+Indirect   0x80046C8 0x4    []
+Indirect   0x800475A 0x1    [2, 3, 4, 5, 8, 9, 10, 13, 15]
+Indirect   0x8004764 Unknown [2, 3, 4, 5, 8, 9, 10, 13, 15]
+Indirect   0x800476C Unknown [2, 3, 4, 5, 8, 9, 10, 13, 15]
+Indirect   0x8004772 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800477E Unknown [1, 4, 6, 8, 9, 10, 13, 15]
+Indirect   0x8004786 0x5    [1, 4, 6, 8, 9, 10, 13, 15]
+Indirect   0x800478E 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004794 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800479A 0x5    []
+Indirect   0x80047A0 0x5    []
+Indirect   0x80047E4 0x1    [0, 5, 6, 8, 9, 10, 13, 15]
+Indirect   0x80047EE 0xD    [0, 5, 6, 8, 9, 10, 13, 15]
+Indirect   0x80047F6 0xD    [0, 5, 6, 8, 9, 10, 13, 15]
+Indirect   0x80047FE 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004804 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800480A 0x800481C [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004830 Unknown []
+Indirect   0x8004858 Unknown []
+Indirect   0x8004862 0x800494C [1, 3, 7, 8, 9, 10, 13, 15]
+Indirect   0x800486A 0x800494C [1, 3, 7, 8, 9, 10, 13, 15]
+Indirect   0x8004874 0x800494C [1, 3, 7, 8, 9, 10, 13, 15]
+Indirect   0x800487C Unknown [2, 3, 4, 7, 8, 9, 10, 13, 15]
+Indirect   0x8004884 0x800494C [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800488A 0x800494C [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004890 0x800494C []
+Indirect   0x8004898 0x800494C []
+Indirect   0x80048A2 Unknown [0, 1, 3, 5, 7, 8, 9, 10, 13, 15]
+Indirect   0x80048AA Unknown [0, 1, 3, 5, 7, 8, 9, 10, 13, 15]
+Indirect   0x80048B2 0x800494C [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80048B8 0x800494C [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80048BE 0x800494C []
+Indirect   0x80048C6 0x800494C []
+Indirect   0x80048D0 Unknown [1, 3, 4, 5, 7, 8, 9, 10, 13, 15]
+Indirect   0x80048D8 Unknown [1, 3, 4, 5, 7, 8, 9, 10, 13, 15]
+Indirect   0x80048E0 0x800494C []
+Indirect   0x80048E6 0x800494C []
+Indirect   0x80048EC 0x800494C []
+Indirect   0x80048FA 0x800494C []
+Indirect   0x8004906 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004912 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800491C 0x5    []
+Indirect   0x8004970 0x5    []
+Indirect   0x800498C 0x1F4  []
+Indirect   0x8004994 0x1F4  [0, 2, 11, 13, 15]
+Indirect   0x800499C 0x1F4  [0, 2, 11, 13, 15]
+Indirect   0x80049A6 0x8004AB8 [0, 2, 11, 13, 15]
+Indirect   0x80049AE 0xD    [1, 3, 4, 5, 7, 8, 9, 10, 13, 15]
+Indirect   0x80049B6 0xD    []
+Indirect   0x80049BC 0xD    []
+Indirect   0x80049C2 0x8004AB8 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80049CA 0x8004AB8 []
+Indirect   0x80049D4 0xD    [1, 2, 4, 11, 13, 15]
+Indirect   0x80049DC 0xD    [1, 2, 4, 11, 13, 15]
+Indirect   0x80049E4 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80049EA 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80049F0 0x8004AB8 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80049F8 0x8004AB8 []
+Indirect   0x8004A02 0xD    [0, 1, 5, 11, 13, 15]
+Indirect   0x8004A0A 0xD    [0, 1, 5, 11, 13, 15]
+Indirect   0x8004A12 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004A18 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004A1E 0x8004AB8 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004A26 0x8004AB8 []
+Indirect   0x8004A30 0xD    [2, 3, 5, 6, 8, 9, 10, 13, 15]
+Indirect   0x8004A38 0xD    [2, 3, 5, 6, 8, 9, 10, 13, 15]
+Indirect   0x8004A40 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004A46 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004A4C 0x8004AB8 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004A50 0x8004AB8 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004A5A 0x8004AB8 [0, 5, 6, 8, 9, 10, 13, 15]
+Indirect   0x8004A64 0xD    [0, 5, 6, 8, 9, 10, 13, 15]
+Indirect   0x8004A6C 0xD    [0, 5, 6, 8, 9, 10, 13, 15]
+Indirect   0x8004A74 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004A7A 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004A80 0x8004AB8 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004A84 0x8004AB8 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004A8E 0x8004AB8 [4, 5, 11, 13, 15]
+Indirect   0x8004A92 0xD    [4, 5, 11, 13, 15]
+Indirect   0x8004AE6 Unknown []
+Indirect   0x8004AF0 Unknown []
+Indirect   0x8004B0E Unknown []
+Indirect   0x8004B2A Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004B3C Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004B48 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004B4C 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004B54 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004B58 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004B60 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004B68 0x4    [0, 1, 3, 4, 5, 6, 11, 13, 15]
+Indirect   0x8004B70 0x1C200 [0, 1, 3, 4, 5, 6, 11, 13, 15]
+Indirect   0x8004B74 0x4    [0, 1, 3, 4, 5, 6, 11, 13, 15]
+Indirect   0x8004BA0 Unknown []
+Indirect   0x8004BA8 Unknown []
+Indirect   0x8004BAC Unknown []
+Indirect   0x8004BFE Unknown []
+Indirect   0x8004C0A Unknown []
+Indirect   0x8004C1E 0x1    []
+Indirect   0x8004C26 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004C2E Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004C38 Unknown []
+Indirect   0x8004C4E 0x1    []
+Indirect   0x8004C54 0x3E8  []
+Indirect   0x8004C7C 0x5    []
+Indirect   0x8004C92 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004C9A 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004CA2 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004CAA 0x2    []
+Indirect   0x8004CB2 0x4    []
+Indirect   0x8004CBA 0x6    []
+Indirect   0x8004CE8 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004CF0 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004CF8 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004D00 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004D08 0x6    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004D34 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004D3C 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004D44 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004D7A Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004D98 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004DA0 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004DA8 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004E04 0x4    []
+Indirect   0x8004E22 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004E30 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004E3C 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004E46 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004E4A 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004E6A 0x7    []
+Indirect   0x8004E76 0x7    []
+Indirect   0x8004ECA 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004EF2 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004F00 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004F0C 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004F16 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004F1A 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004F3C 0x8    []
+Indirect   0x8004F48 0x8    []
+Indirect   0x8004F82 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8004F96 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005008 Unknown []
+Indirect   0x800502E 0xA    []
+Indirect   0x800503A 0xA    []
+Indirect   0x800507A 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005088 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005092 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005096 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80050AE 0x1    []
+Indirect   0x80050C0 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800510A Unknown []
+Indirect   0x800512C 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800513E 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800514A 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005154 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005158 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800517A 0x9    []
+Indirect   0x8005186 0x9    []
+Indirect   0x8005198 0x9    []
+Indirect   0x80051EE Unknown []
+Indirect   0x8005214 0x9    []
+Indirect   0x8005220 0x9    []
+Indirect   0x8005252 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005294 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80052A6 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80052B0 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80052B4 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800532A Unknown []
+Indirect   0x8005350 0xA    []
+Indirect   0x800535C 0xA    []
+Indirect   0x800538C 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800539A 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80053B2 0x4    []
+Indirect   0x80053D4 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80053E2 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80053EE 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80053F8 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800544A Unknown []
+Indirect   0x8005470 0xA    []
+Indirect   0x800547C 0xA    []
+Indirect   0x80054AC 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80054C0 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80054D0 0x4    []
+Indirect   0x80054F2 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005504 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005510 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800551A 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005584 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80055A0 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80055A8 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80055B8 0x4    []
+Indirect   0x80055D2 0x4    []
+Indirect   0x80055DC 0x4    []
+Indirect   0x80055E8 0x4    []
+Indirect   0x80055F0 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80055FE 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800560C 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005632 0x4    []
+Indirect   0x8005654 0x1    [0, 3, 4, 6, 7, 11, 13, 15]
+Indirect   0x800565C 0x1    [1, 2, 3, 4, 5, 6, 7, 11, 13, 15]
+Indirect   0x8005666 0x1    [1, 2, 3, 4, 5, 6, 7, 11, 13, 15]
+Indirect   0x8005670 0x4    [1, 2, 3, 4, 5, 6, 7, 11, 13, 15]
+Indirect   0x800567A 0x4    [0, 2, 8, 11, 13, 15]
+Indirect   0x8005684 0x4    [0, 1, 8, 11, 13, 15]
+Indirect   0x800568E 0x4    [1, 3, 8, 11, 13, 15]
+Indirect   0x8005698 0x4    [0, 1, 2, 4, 8, 11, 13, 15]
+Indirect   0x80056A2 0x4    [0, 5, 8, 11, 13, 15]
+Indirect   0x80056AC 0x4    [1, 3, 5, 8, 11, 13, 15]
+Indirect   0x80056BA 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80056C2 0x5    [1, 6, 8, 11, 13, 15]
+Indirect   0x80056CA 0x4    [1, 6, 8, 11, 13, 15]
+Indirect   0x80056D8 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80056E0 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80056EA Unknown [3, 6, 8, 11, 13, 15]
+Indirect   0x80056F4 Unknown [3, 6, 8, 11, 13, 15]
+Indirect   0x80056FE Unknown [0, 1, 3, 6, 8, 11, 13, 15]
+Indirect   0x8005706 Unknown [1, 2, 3, 6, 8, 11, 13, 15]
+Indirect   0x800570E Unknown [0, 4, 6, 8, 11, 13, 15]
+Indirect   0x8005716 0x4    [2, 4, 6, 8, 11, 13, 15]
+Indirect   0x800571E 0x4    [2, 4, 6, 8, 11, 13, 15]
+Indirect   0x800572A 0x4    [1, 3, 5, 6, 9, 10, 12, 13, 15]
+Indirect   0x8005734 0x5    [1, 3, 5, 6, 9, 10, 12, 13, 15]
+Indirect   0x800573A 0x5    [1, 3, 5, 6, 9, 10, 12, 13, 15]
+Indirect   0x8005784 Unknown [1, 2, 3, 4, 5, 6, 7, 11, 13, 15]
+Indirect   0x8005790 0x8005A24 [1, 2, 3, 4, 5, 6, 7, 11, 13, 15]
+Indirect   0x80057AA Unknown []
+Indirect   0x80057C4 0x4    [0, 2, 8, 11, 13, 15]
+Indirect   0x80057D2 0x4    [0, 2, 8, 11, 13, 15]
+Indirect   0x80057E0 0x1    []
+Indirect   0x80057F6 0xD    [0, 1, 2, 5, 6, 8, 11, 13, 15]
+Indirect   0x8005800 0xD    [0, 1, 2, 5, 6, 8, 11, 13, 15]
+Indirect   0x8005808 0xD    [0, 1, 2, 5, 6, 8, 11, 13, 15]
+Indirect   0x8005810 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005816 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800581C 0xD    []
+Indirect   0x8005832 0xD    [0, 5, 8, 11, 13, 15]
+Indirect   0x800584A 0x7    []
+Indirect   0x800588A 0x8005A24 [0, 1, 2, 3, 4, 5, 6, 8, 11, 13, 15]
+Indirect   0x8005894 0xD    [0, 1, 2, 5, 6, 8, 11, 13, 15]
+Indirect   0x800589C 0xD    [0, 1, 2, 5, 6, 8, 11, 13, 15]
+Indirect   0x80058A4 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80058AA 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80058B0 0xD    []
+Indirect   0x80058BA 0x8005A24 []
+Indirect   0x80058CA 0x4    [1, 3, 5, 8, 11, 13, 15]
+Indirect   0x80058FE 0x4    [0, 1, 8, 11, 13, 15]
+Indirect   0x800590A 0x4    [0, 1, 8, 11, 13, 15]
+Indirect   0x8005912 0x4    [0, 1, 8, 11, 13, 15]
+Indirect   0x800591A 0x1    []
+Indirect   0x8005922 0x1    []
+Indirect   0x8005936 0x7    [0, 3, 6, 7, 11, 13, 15]
+Indirect   0x800594C Unknown [1, 6, 8, 11, 13, 15]
+Indirect   0x8005954 0x4    [1, 6, 8, 11, 13, 15]
+Indirect   0x800595C 0x4    [1, 6, 8, 11, 13, 15]
+Indirect   0x800596C 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005974 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005980 0xD    []
+Indirect   0x800598E 0x1    []
+Indirect   0x80059A8 0x7    []
+Indirect   0x80059BE Unknown [2, 4, 7, 8, 11, 13, 15]
+Indirect   0x80059C6 Unknown [2, 4, 7, 8, 11, 13, 15]
+Indirect   0x80059CE 0x8005A24 [0, 1, 5, 7, 8, 11, 13, 15]
+Indirect   0x80059D4 0x8005A24 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80059DA 0x8005A24 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80059E4 0x8005A24 []
+Indirect   0x80059EC 0xD    [2, 4, 6, 8, 11, 13, 15]
+Indirect   0x80059F4 0x4    [2, 4, 6, 8, 11, 13, 15]
+Indirect   0x8005A04 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005A0C 0x8005A6C [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005A74 0x4    [0, 1, 2, 4, 8, 11, 13, 15]
+Indirect   0x8005A7E 0x4    [0, 1, 2, 4, 8, 11, 13, 15]
+Indirect   0x8005A8E 0x8005AC0 [0, 1, 2, 4, 8, 11, 13, 15]
+Indirect   0x8005A9C 0x4    [1, 3, 8, 11, 13, 15]
+Indirect   0x8005AA6 0x4    [6, 7, 8, 11, 13, 15]
+Indirect   0x8005AB2 0xD    [3, 4, 5, 8, 11, 13, 15]
+Indirect   0x8005B0A 0x5    []
+Indirect   0x8005B16 0x5    []
+Indirect   0x8005B28 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005B30 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005B38 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005B3E 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005B4A 0x4    []
+Indirect   0x8005B52 0x4    []
+Indirect   0x8005B56 0x4    []
+Indirect   0x8005B62 0x5    [1, 3, 5, 6, 9, 10, 12, 13, 15]
+Indirect   0x8005B7E Unknown [1, 3, 5, 6, 9, 10, 12, 13, 15]
+Indirect   0x8005B8A Unknown []
+Indirect   0x8005B92 Unknown []
+Indirect   0x8005B98 Unknown []
+Indirect   0x8005BA4 Unknown []
+Indirect   0x8005BAA Unknown []
+Indirect   0x8005BB0 Unknown []
+Indirect   0x8005BB6 Unknown []
+Indirect   0x8005BBC Unknown []
+Indirect   0x8005BCA Unknown [3, 5, 6, 7, 8, 11, 13, 15]
+Indirect   0x8005BD2 Unknown [3, 5, 6, 7, 8, 11, 13, 15]
+Indirect   0x8005BDA 0x8005BEC [3, 5, 6, 7, 8, 11, 13, 15]
+Indirect   0x8005BE0 0x8005BEC [3, 5, 6, 7, 8, 11, 13, 15]
+Indirect   0x8005BFC Unknown []
+Indirect   0x8005C14 Unknown []
+Indirect   0x8005C38 Unknown []
+Indirect   0x8005C46 Unknown []
+Indirect   0x8005C94 Unknown []
+Indirect   0x8005CAC 0x2    []
+Indirect   0x8005CD0 Unknown []
+Indirect   0x8005CDE 0x2    []
+Indirect   0x8005D2C Unknown []
+Indirect   0x8005D44 0x4    []
+Indirect   0x8005D68 Unknown []
+Indirect   0x8005D76 0x4    []
+Indirect   0x8005DC4 Unknown []
+Indirect   0x8005DDC 0x6    []
+Indirect   0x8005E00 Unknown []
+Indirect   0x8005E0E 0x6    []
+Indirect   0x8005E7E Unknown []
+Indirect   0x8005E8C Unknown []
+Indirect   0x8005E92 0xCB   []
+Indirect   0x8005E9E 0xCB   [0, 1, 2, 3, 4, 6, 9, 11, 13, 15]
+Indirect   0x8005EA6 0xCB   [0, 1, 2, 3, 4, 6, 9, 11, 13, 15]
+Indirect   0x8005ECA Unknown []
+Indirect   0x8005ED8 Unknown []
+Indirect   0x8005EDE 0xCA   []
+Indirect   0x8005EEA 0xCA   [0, 2, 4, 5, 6, 9, 11, 13, 15]
+Indirect   0x8005EF2 0xCA   [0, 2, 4, 5, 6, 9, 11, 13, 15]
+Indirect   0x8005F16 Unknown []
+Indirect   0x8005F24 Unknown []
+Indirect   0x8005F2A 0xCC   []
+Indirect   0x8005F36 0xCC   [1, 3, 7, 9, 11, 13, 15]
+Indirect   0x8005F3E 0xCC   [1, 3, 7, 9, 11, 13, 15]
+Indirect   0x8005F70 Unknown []
+Indirect   0x8005F78 Unknown []
+Indirect   0x8005FAA 0x8005FC8 [1, 2, 3, 4, 7, 9, 11, 13, 15]
+Indirect   0x8005FB6 0x8005FC8 [1, 2, 3, 4, 7, 9, 11, 13, 15]
+Indirect   0x8005FDA 0x4    []
+Indirect   0x8005FE2 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005FF0 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8005FFC 0x4    [0, 4, 5, 7, 9, 11, 13, 15]
+Indirect   0x8006004 0x4    []
+Indirect   0x8006020 0x4    [0, 1, 3, 4, 5, 7, 9, 11, 13, 15]
+Indirect   0x8006078 0x80061D4 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006092 0x80061D4 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80060B6 0x80061D4 [0, 1, 2, 3, 4, 5, 7, 9, 11, 13, 15]
+Indirect   0x80060BE 0x5    [0, 1, 2, 3, 4, 5, 7, 9, 11, 13, 15]
+Indirect   0x80060C6 0x5    [0, 1, 2, 3, 4, 5, 7, 9, 11, 13, 15]
+Indirect   0x80060E0 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80060F8 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006100 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006108 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006110 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006118 0x5    []
+Indirect   0x800611E 0x5    []
+Indirect   0x8006124 0x5    []
+Indirect   0x800612C 0x5    []
+Indirect   0x8006134 Unknown [0, 2, 4, 5, 6, 7, 9, 11, 13, 15]
+Indirect   0x800613C Unknown [0, 2, 4, 5, 6, 7, 9, 11, 13, 15]
+Indirect   0x8006144 Unknown []
+Indirect   0x800614A Unknown []
+Indirect   0x8006150 Unknown []
+Indirect   0x800618A 0x80061D4 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80061A2 0x80061D4 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80061B4 Unknown []
+Indirect   0x80061BA Unknown []
+Indirect   0x80061C0 Unknown []
+Indirect   0x80061C6 Unknown []
+Indirect   0x80061CC 0x5    []
+Indirect   0x8006232 0x4    []
+Indirect   0x800623A 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006246 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006258 0x4    [2, 8, 9, 11, 13, 15]
+Indirect   0x8006260 Unknown [3, 4, 8, 9]
+Indirect   0x800626C Unknown [3, 4, 8, 9]
+Indirect   0x8006274 Unknown [2, 5, 8, 9]
+Indirect   0x80062B0 0x8006318 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80062C0 0x8006318 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80062CA 0x4    []
+Indirect   0x80062D8 0x8006318 []
+Indirect   0x80062E8 0x8006318 []
+Indirect   0x80062F2 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80062FA 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006302 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800641C Unknown []
+Indirect   0x8006424 Unknown [0, 2, 3, 8, 9, 11, 13, 15]
+Indirect   0x8006430 0x80064D8 [0, 2, 3, 8, 9, 11, 13, 15]
+Indirect   0x800644C Unknown []
+Indirect   0x8006458 Unknown [2, 3, 4, 8, 9, 11, 13, 15]
+Indirect   0x8006598 0xCC   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80065A2 0xCC   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80065AA 0xCC   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80065B6 0xCA   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80065C0 0xCB   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80065E0 0xD    [0, 2, 4, 8, 9, 10, 11, 12, 14]
+Indirect   0x80065EA 0xD    [0, 2, 4, 8, 9, 10, 11, 12, 14]
+Indirect   0x80065F0 0x6    [0, 2, 4, 8, 9, 10, 11, 12, 14]
+Indirect   0x8006604 0xD    [0, 3, 6, 7, 9, 10, 11, 12, 14]
+Indirect   0x800660E 0xD    [0, 3, 6, 7, 9, 10, 11, 12, 14]
+Indirect   0x8006614 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006628 0xD    [0, 2, 3, 4, 5, 6, 9, 10, 11, 12, 14]
+Indirect   0x8006632 0xD    [0, 2, 3, 4, 5, 6, 9, 10, 11, 12, 14]
+Indirect   0x8006638 0xD    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006650 0xD    [0, 4, 5, 6, 7, 8, 9, 11, 12, 14]
+Indirect   0x800665A 0xD    [0, 4, 5, 6, 7, 8, 9, 11, 12, 14]
+Indirect   0x8006660 0xD    [0, 4, 5, 6, 7, 8, 9, 11, 12, 14]
+Indirect   0x8006678 0xD    [0, 3, 7, 10, 11, 12, 14]
+Indirect   0x8006682 0xD    [0, 3, 7, 10, 11, 12, 14]
+Indirect   0x8006688 0xD    [0, 3, 7, 10, 11, 12, 14]
+Indirect   0x80066A0 0xD    [0, 5, 8, 10, 11, 12, 14]
+Indirect   0x80066AA 0xD    [0, 5, 8, 10, 11, 12, 14]
+Indirect   0x80066B0 0xD    [0, 5, 8, 10, 11, 12, 14]
+Indirect   0x80066C8 0xD    [0, 3, 4, 5, 7, 8, 10, 11, 12, 14]
+Indirect   0x80066D2 0xD    [0, 3, 4, 5, 7, 8, 10, 11, 12, 14]
+Indirect   0x80066D8 0xD    [0, 3, 4, 5, 7, 8, 10, 11, 12, 14]
+Indirect   0x8006794 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800679E 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80067BC 0x80067D4 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80067E2 0x80067FC []
+Indirect   0x80067E8 0x80067FC []
+Indirect   0x8006820 0x8006890 []
+Indirect   0x8006836 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800684A 0x4    []
+Indirect   0x8006868 0x8006890 []
+Indirect   0x8006874 0x8006890 [3, 4, 5, 7, 9, 11, 13, 15]
+Indirect   0x80068AC 0x4    []
+Indirect   0x80068B4 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80068C2 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80068CE 0x4    [1, 6, 8, 9, 11, 13, 15]
+Indirect   0x80068DA 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80068E6 0x20   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80068F2 0x3E   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800691C 0x4    []
+Indirect   0x8006948 Unknown []
+Indirect   0x800695A Unknown []
+Indirect   0x8006966 Unknown []
+Indirect   0x8006972 Unknown []
+Indirect   0x8006990 Unknown []
+Indirect   0x80069A0 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80069AA 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80069B2 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80069BA 0x8006A0C [0, 2, 3, 6, 8, 9, 11, 13, 15]
+Indirect   0x80069CC 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80069D4 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80069E0 0x4    [2, 3, 4, 6, 8, 9, 11, 13, 15]
+Indirect   0x80069E6 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80069EE 0x4    [5, 6, 8, 9, 11, 13, 15]
+Indirect   0x80069F2 0x4    [5, 6, 8, 9, 11, 13, 15]
+Indirect   0x8006AA2 Unknown []
+Indirect   0x8006B42 Unknown []
+Indirect   0x8006B4A 0x1C   []
+Indirect   0x8006B5A 0x1C   []
+Indirect   0x8006B70 Unknown []
+Indirect   0x8006B76 0x5    []
+Indirect   0x8006B7E 0x5    []
+Indirect   0x8006B96 0x4    []
+Indirect   0x8006BA4 0x5    [0, 3, 4, 6, 9, 11, 13, 14]
+Indirect   0x8006BE6 0x10   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006C0E 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006C1A 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006C2C 0x10   []
+Indirect   0x8006C3A Unknown []
+Indirect   0x8006C5E 0x1C   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006C84 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006CA8 Unknown []
+Indirect   0x8006CC6 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006CDC 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006CEC Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006D34 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006D42 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006D6C Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006D74 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006D84 0x4    []
+Indirect   0x8006D8A 0x4    []
+Indirect   0x8006DBC 0x88   []
+Indirect   0x8006DC2 0x88   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8006E1C Unknown []
+Indirect   0x8006E5E Unknown []
+Indirect   0x8006E68 0x4    []
+Indirect   0x8006E7E 0x4    []
+Indirect   0x8006EAA 0x4    []
+Indirect   0x8006EBA 0x4    [5, 7, 9, 10, 15]
+Indirect   0x8006EC8 0x5    [5, 7, 9, 10, 15]
+Indirect   0x8006F22 0x5C   [3, 7, 8, 10, 13, 15]
+Indirect   0x8006F2C 0x5C   [3, 7, 8, 10, 13, 15]
+Indirect   0x8006F40 0x60   [3, 4, 6, 8, 10, 13, 15]
+Indirect   0x8006F8A 0x60   [3, 4, 6, 8, 10, 13, 15]
+Indirect   0x8006F92 0x60   [3, 4, 6, 8, 10, 13, 15]
+Indirect   0x8006FEC 0x64   []
+Indirect   0x8006FF4 0x64   []
+Indirect   0x8007000 0x64   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007008 0x64   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800700E 0x64   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007088 0x64   []
+Indirect   0x8007090 0x64   []
+Indirect   0x8007096 0x64   []
+Indirect   0x800709E 0x64   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80070A6 0x65   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007118 Unknown []
+Indirect   0x8007198 0x1    []
+Indirect   0x80071DC 0x2    []
+Indirect   0x8007208 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007210 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007222 0x6    []
+Indirect   0x800722A 0x6    []
+Indirect   0x8007236 0x4    []
+Indirect   0x800723E 0x4    []
+Indirect   0x8007248 0x4    []
+Indirect   0x80072A8 0x6    []
+Indirect   0x80072C4 0x6    []
+Indirect   0x800730A Unknown []
+Indirect   0x8007426 0xA    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80074A8 Unknown []
+Indirect   0x80074BE 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80074E2 Unknown []
+Indirect   0x80074F8 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007520 Unknown []
+Indirect   0x8007548 0x5    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007564 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007582 Unknown []
+Indirect   0x8007596 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80075B0 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80075C4 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80075DA 0x4    []
+Indirect   0x8007648 Unknown []
+Indirect   0x800765C 0x8    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800770E 0xB    []
+Indirect   0x8007748 0xB    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007820 0x10   []
+Indirect   0x8007864 0x10   []
+Indirect   0x800789E Unknown []
+Indirect   0x80078EC 0x4    []
+Indirect   0x800797A 0xA    []
+Indirect   0x80079E8 0xA    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007A38 0xA    []
+Indirect   0x8007A62 0xA    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007AA6 0xA    []
+Indirect   0x8007AF4 Unknown []
+Indirect   0x8007B6C 0xA    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007BAE Unknown []
+Indirect   0x8007C20 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007CAE 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007DA2 Unknown []
+Indirect   0x8007DFC 0x2C   []
+Indirect   0x8007E14 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007E20 0x2    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007E2A 0x28   []
+Indirect   0x8007E8E 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007E9A 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007EB4 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007EEE 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007EFC 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007F10 0x28   []
+Indirect   0x8007F1A 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007F28 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007F36 0x28   []
+Indirect   0x8007F58 0x24   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8007FDA 0x4    []
+Indirect   0x8008020 Unknown []
+Indirect   0x8008058 0x4    []
+Indirect   0x8008084 0x7    []
+Indirect   0x8008094 0x7    []
+Indirect   0x800809E 0x7    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80080A4 0x37   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80080AE 0x37   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80080B4 0x37   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80080BE 0x1    []
+Indirect   0x80080CC 0xA    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80080D6 0x37   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80080E2 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80080EC 0x4    [1, 4, 7, 8, 12, 13, 15]
+Indirect   0x80080FE 0x4    [1, 2, 3, 7, 8, 12, 13, 15]
+Indirect   0x8008108 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008144 0x35   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800814E 0x35   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80081D0 0x7    []
+Indirect   0x800822C 0x33   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008236 0x33   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008324 0x24   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008352 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800835A 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008362 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800836C 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008374 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008386 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008390 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800839A 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80083C6 0x24   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008650 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800865A 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800866A 0x4    [4, 5, 6, 8, 12, 13, 15]
+Indirect   0x8008676 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800869C Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80086AA 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80086B2 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80086CE 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80086E4 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80086F2 0x4    []
+Indirect   0x80086FC 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800870A 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008718 0x28   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008736 0x24   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80087AE 0x80087B8 [10, 11, 12, 13, 14, 15]
+Indirect   0x80087C0 0x80087B8 [10, 11, 12, 13, 14, 15]
+Indirect   0x80087E4 Unknown []
+Indirect   0x80087F6 Unknown []
+Indirect   0x8008808 0x3    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008814 0x3    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800888E Unknown []
+Indirect   0x800889E Unknown []
+Indirect   0x8008918 Unknown [0, 2, 3, 6, 7, 11, 15]
+Indirect   0x800893A Unknown []
+Indirect   0x8008964 0x7    []
+Indirect   0x800896E 0x7    []
+Indirect   0x8008992 0x100  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80089A8 0x7    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80089B8 0x7    [0, 2, 3, 6, 7, 11, 15]
+Indirect   0x80089D2 0x6    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80089DA 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80089F6 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008A06 0x100  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008A4C Unknown []
+Indirect   0x8008A64 Unknown []
+Indirect   0x8008B36 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008B3C Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008B58 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008B6C 0x3    [2, 3, 4, 6, 7, 9, 13, 15]
+Indirect   0x8008B7E 0x3    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008B8A 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008BBC Unknown []
+Indirect   0x8008C48 0x12   []
+Indirect   0x8008C54 0x11   []
+Indirect   0x8008C78 Unknown []
+Indirect   0x8008CDA 0x6    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008CEE 0x1    []
+Indirect   0x8008D10 Unknown []
+Indirect   0x8008D20 Unknown []
+Indirect   0x8008D30 Unknown [3, 5, 6, 9, 10, 12, 13, 15]
+Indirect   0x8008D38 0x5    [3, 5, 6, 9, 10, 12, 13, 15]
+Indirect   0x8008D44 0x5    []
+Indirect   0x8008D4C 0x5    []
+Indirect   0x8008D8A Unknown []
+Indirect   0x8008DC0 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008DCC 0x7    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008DDE 0x7    []
+Indirect   0x8008DE6 0x7    []
+Indirect   0x8008DF2 0x5    []
+Indirect   0x8008DFE 0x4    []
+Indirect   0x8008E04 0x4    []
+Indirect   0x8008E2C 0x7    []
+Indirect   0x8008E4C 0x7    []
+Indirect   0x8008EC0 Unknown []
+Indirect   0x8008ECA 0x4    []
+Indirect   0x8008ED0 0x4    []
+Indirect   0x8008F42 Unknown []
+Indirect   0x8008F52 Unknown []
+Indirect   0x8008F6A Unknown []
+Indirect   0x8008F88 0x1    []
+Indirect   0x8008FA4 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008FAC 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008FBA 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008FD2 0x1    []
+Indirect   0x8008FDC 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8008FFA Unknown []
+Indirect   0x8009012 Unknown []
+Indirect   0x800902C Unknown []
+Indirect   0x8009044 0x4    []
+Indirect   0x800904C 0x4    []
+Indirect   0x800905E 0x4    []
+Indirect   0x8009070 0x4    []
+Indirect   0x800907A 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009082 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800909A 0x1    []
+Indirect   0x80090A2 0x1    []
+Indirect   0x80090BE 0x1    []
+Indirect   0x80090C6 0x1    []
+Indirect   0x80090E4 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80090F4 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800910E 0x1    []
+Indirect   0x8009120 Unknown []
+Indirect   0x8009128 0x4    []
+Indirect   0x800913A 0x4    []
+Indirect   0x8009144 0x4    []
+Indirect   0x800914E 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009176 Unknown []
+Indirect   0x8009194 Unknown []
+Indirect   0x80091D8 Unknown [1, 3, 5, 6, 9, 10, 12, 13, 15]
+Indirect   0x80091F8 0x7    []
+Indirect   0x8009222 0x1    []
+Indirect   0x8009230 0x1    []
+Indirect   0x8009244 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009356 Unknown []
+Indirect   0x8009368 Unknown []
+Indirect   0x800936C 0x3    []
+Indirect   0x8009370 0x3    []
+Indirect   0x80093AC 0x33   []
+Indirect   0x80093D6 Unknown []
+Indirect   0x80093DA Unknown []
+Indirect   0x800946A 0x4    [2, 5, 8, 9, 13, 15]
+Indirect   0x80094A4 0x6    []
+Indirect   0x80094E0 0x7    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80094EC 0x7    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x800955A 0x4    [2, 5, 8, 9, 13, 15]
+Indirect   0x8009562 0x4    [2, 5, 8, 9, 13, 15]
+Indirect   0x80096DE Unknown []
+Indirect   0x80096E4 Unknown []
+Indirect   0x80096E8 Unknown []
+Indirect   0x80096FC 0x800970C []
+Indirect   0x8009718 0x800970C []
+Indirect   0x800973A Unknown []
+Indirect   0x80098BE Unknown []
+Indirect   0x80098DA 0x7    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009956 0x60   [2, 3, 5, 6, 7, 8, 13, 15]
+Indirect   0x8009960 0x60   [2, 3, 5, 6, 7, 8, 13, 15]
+Indirect   0x800996A 0x60   [2, 3, 5, 6, 7, 8, 13, 15]
+Indirect   0x8009974 0x5C   [2, 3, 7, 8, 13, 15]
+Indirect   0x8009996 0x9    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80099A0 0x9    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80099AA 0x9    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x80099DE Unknown []
+Indirect   0x8009A4C 0x60   [2, 3, 5, 6, 7, 8, 13, 15]
+Indirect   0x8009A54 0x60   [2, 3, 5, 6, 7, 8, 13, 15]
+Indirect   0x8009A5C 0x60   [2, 3, 4, 5, 7, 8, 13, 15]
+Indirect   0x8009AE8 Unknown []
+Indirect   0x8009B06 0x68   [2, 3, 4, 6, 8, 13, 15]
+Indirect   0x8009B38 0x4    []
+Indirect   0x8009B52 Unknown []
+Indirect   0x8009BB6 Unknown []
+Indirect   0x8009BD8 Unknown []
+Indirect   0x8009C0A 0x1    []
+Indirect   0x8009C10 0x1    []
+Indirect   0x8009C48 Unknown []
+Indirect   0x8009C52 0x5    []
+Indirect   0x8009C70 0x4    []
+Indirect   0x8009CAA Unknown []
+Indirect   0x8009CBA Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009CDC 0x6    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009CEC 0x6    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009D2A 0x6    []
+Indirect   0x8009D70 0x6    []
+Indirect   0x8009DC0 Unknown [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009DCC 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009DE0 0x4    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009DF4 0x8    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009DFC 0x8    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009E14 Unknown []
+Indirect   0x8009F78 0xFFFFFFFFFFFFFFFF []
+Indirect   0x8009FA2 0x1    []
+Indirect   0x8009FC6 0x1    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Indirect   0x8009FEC 0x1    []
+Indirect   0x800A01C Unknown []
+Indirect   0x800A034 Unknown []
+Indirect   0x800A03E Unknown []
+Indirect   0x800A098 Unknown []
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
