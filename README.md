@@ -1,6 +1,6 @@
 # MFU - Multi Filament Unit
 
-[bDonate via PayPal](https://paypal.me/fpvfixit)
+[𝑫𝒐𝒏𝒂𝒕𝒆 𝒗𝒊𝒂 𝑷𝒂𝒚𝑷𝒂𝒍](https://paypal.me/fpvfixit)
 
 [Join our Discord server](https://discord.gg/vSY3dskxgM)
 ---
